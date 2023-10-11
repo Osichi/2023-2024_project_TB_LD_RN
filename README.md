@@ -1,1 +1,2 @@
-# 2023-2024_project_TB_LD_RN
+# Changelog
+2023.10.11: regisztrálás logika létrehozva
