@@ -1,0 +1,2 @@
+login - register form: https://www.phpcluster.com/login-registration-form-switch-javascript/
+register form logic: https://www.geeksforgeeks.org/how-to-insert-form-data-into-database-using-php/
