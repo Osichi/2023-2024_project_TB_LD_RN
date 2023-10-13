@@ -10,7 +10,7 @@
 <form action="db.php" method="POST">
     <div id="log">
         <center><h4>Bejelentkezés</h4></center>
-        <label>Cégjegyzékszám</label><input type="text" name="cegszam" id="cegszam"><br>
+        <label>Cégjegyzékszám</label><input type="text" name="cegszam" id="cegszam" ><br>
         <label>Jelszó</label><input type="password" name="password" id="password"><br>
         <button type="submit" name="loginBtn">Login</button>
         <br><br><br> 

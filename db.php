@@ -7,19 +7,16 @@ if(isset($_POST['registerBtn']))
     $cegszam = $_REQUEST['cegszam'];
     $password = $_REQUEST['password'];
 
-    $insert_query= "INSERT INTO registeredcorps(cegnev, cegjegyzekszam, jelszo) VALUES('$cegnev','$cegszam','$password')";
-    $insert_query_run = mysqli_query($connection, $insert_query);
-
-    if($insert_query_run)
-    {
-        $_SESSION['status']= "Data inserted succesfully";
-        header('location: index.php');
-       
+    $checkQuery = "SELECT * FROM registeredcorps WHERE cegjegyzekszam ='$cegszam'";
+    $checkQueryEredmeny = mysqli_query($connection, $checkQuery);
+    if(mysqli_num_rows($checkQueryEredmeny) == 0){
+            $insert_query= "INSERT INTO registeredcorps(cegnev, cegjegyzekszam, jelszo) VALUES('$cegnev','$cegszam','$password')";
+            $insert_query_run = mysqli_query($connection, $insert_query);
+        
+            
     }
     else{
-        $_SESSION['status']="data not inserted succesfully";
-        header('location: index.php');
-        
+        echo '<script>alert("Ez a cég már regisztrálva van!")</script>';
     }
 }
 ?>
