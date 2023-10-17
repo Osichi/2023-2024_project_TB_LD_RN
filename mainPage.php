@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,17 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="">
     <title>Document</title>
 </head>
 <body>
-<nav>
-    <?php
-        if (isset($_SESSION['cegnev'])){
-            echo"<p>".$_SESSION['cegnev']."</p>";
-        }
-    ?>
-    <a href="login.php">Belépés</a>   
-</nav>
+    <div class="container">
+        <h1>mainPage</h1>
+    </div>
+
+    <ul>
+        <?php if (isset($_SESSION["user"])) {
+        echo"<li style='color:red;'>".$_SESSION['user']."</li>";
+        echo"<li><a href='logout.php'>Kilépés</a></li>";}
+    else {
+        echo"<li><a href='registration.php'>Regisztráció</a></li>";
+        echo"<li><a href='login.php'>Belépés</a></li>";}?>
+    </ul>
+
 </body>
-</html>
+</html>l
