@@ -20,4 +20,4 @@
                     echo "<div class='alert alert-danger'>Jegyzékszám nem egyezik</div>";
                 }
             }
-        ?>
+?>

@@ -17,8 +17,6 @@
 </head>
 <body>
     <div class="container">
-
-    
         <form action="loginLogic.php" method="post">
         <div class="form-group">
                 <input type="text" class="form-control" name="cegnev" placeholder="Cégnév">

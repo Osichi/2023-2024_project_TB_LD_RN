@@ -18,8 +18,6 @@
 <body>
     <div class="container">
 
-        
-    
         <form action="registrationLogic.php" method="post">
             <div class="form-group">
                 <input type="text" class="form-control" name="nev" placeholder="Cég neve">
