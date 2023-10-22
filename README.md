@@ -8,3 +8,7 @@
 2023.10.17: login, register logika átdolgozva, működőképesek már
 
 2023.10.18: backend rész elválasztva a többitől
+
+2023.10.20: backend mappa létrehozva
+
+2023.10.22: frontend mappa létrehozva átláthatóság miatt, dokumentáció elkezdve, backendhez http válasz kódok hozzáadva, általános debugolás
