@@ -14,3 +14,5 @@
 **2023.10.22**: frontend mappa létrehozva átláthatóság miatt, dokumentáció elkezdve, backendhez http válasz kódok hozzáadva, általános debugolás
 
 **2023.10.25**: dokumentáció korai frontend része elkezdve, pár frontendes dolog hozzáadva a kódokhoz, profil oldal létrehozva, .gitignore létrehozva
+
+**2023.11.05**: projektelőrehaladás hf feltöltve
