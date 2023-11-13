@@ -18,3 +18,5 @@
 **2023.11.05**: projektelőrehaladás hf feltöltve
 
 **2023.11.07**: laravel keretrendszeres projekt elkezdve
+
+**2023.11.08**: npm install
