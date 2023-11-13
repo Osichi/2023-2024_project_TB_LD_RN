@@ -1,3 +1,12 @@
+# FONTOS, AMIKOR LEHÚZOD:
+```
+npm install
+```
+
+```
+composer install
+```
+
 # Changelog
 **2023.10.11**: regisztrálás logika létrehozva 
 
