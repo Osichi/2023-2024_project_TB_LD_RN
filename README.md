@@ -1,4 +1,11 @@
 # FONTOS, AMIKOR LEHÚZOD:
+
+[Composer](https://getcomposer.org/download/)
+
+[nodejs](https://nodejs.org/en/)
+
+
+
 ```
 npm install
 ```
@@ -7,7 +14,7 @@ npm install
 composer install
 ```
 
-Mivel sok php extension kell hozzá, ezért inkább berakom az ***[enyém](https://onlinenotepad.org/notepad)*** (<- link), ezt a php-(verziószám)/php.ini -fileba kell berakni
+Mivel sok php extension kell hozzá, ezért inkább berakom az ***[enyém](https://anotepad.com/notes/9bjkyxew)***, ezt a php-(verziószám)/php.ini -fileba kell berakni
 
 # Changelog
 **2023.10.11**: regisztrálás logika létrehozva 
