@@ -2,9 +2,9 @@
 
 [Composer](https://getcomposer.org/download/)
 
-[nodejs](https://nodejs.org/en/)
+[Node.js](https://nodejs.org/en/)
 
-
+Ha ezek lent vannak akkor nyisd meg a projektet és egy terminal -ba (CTRL-Ö) írd be a következőket:
 
 ```
 npm install
