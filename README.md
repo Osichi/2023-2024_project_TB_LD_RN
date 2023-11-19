@@ -7,6 +7,8 @@ npm install
 composer install
 ```
 
+Mivel sok php extension kell hozzá, ezért inkább berakom az ***[enyém](https://onlinenotepad.org/notepad)*** (<- link), ezt a php-(verziószám)/php.ini -fileba kell berakni
+
 # Changelog
 **2023.10.11**: regisztrálás logika létrehozva 
 
@@ -29,3 +31,5 @@ composer install
 **2023.11.07**: laravel keretrendszeres projekt elkezdve
 
 **2023.11.08**: npm install
+
+**2023.11.19**: regisztráció létrehozva
