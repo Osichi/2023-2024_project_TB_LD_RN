@@ -40,3 +40,5 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az ***[enyém](https
 **2023.11.08**: npm install
 
 **2023.11.19**: regisztráció létrehozva
+
+**2023.11.26**: bejelentkezés létrehozva
