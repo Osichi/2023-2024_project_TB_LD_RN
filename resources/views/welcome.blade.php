@@ -10,19 +10,44 @@
         
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="/register" class="nav-link">Regisztráció</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/login" class="nav-link">Bejelentkezés</a>
-                        </li>
-                    </ul>
+        <style>
+            input {
+                text-align: center;
+                position: static;
+            }
+        </style>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="fentivalami">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <!-- Itt helyezd el a képet -->
+                    <img src="/imgs/logo.png" alt="Logo" style="width: 100%;">
+                </li>
+                <li class="nav-item">
+                    <a href="/register" id="reg" class="nav-link">
+                        <button class="btn btn-primary btn-rounded">Regisztráció</button>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/login" id="log" class="nav-link">
+                        <button class="btn btn-primary btn-rounded">Bejelentkezés</button>
+                    </a>
+                </li>
+            </ul>
+            <div class="container">
+                <div class="row height d-flex justify-content-center align-items-center">
+                    <div class="col-md-6">
+                        <div class="form">
+                            <i class="fa fa-search"></i>
+                            <input type="text" class="form-control form-input" placeholder="Search anything..." style="width: 100%">
+                            <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
+    </div>
+</nav>
     </body>
 </html>

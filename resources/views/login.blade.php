@@ -8,7 +8,8 @@
     <title>Bejelentkezés</title>
 </head>
 <body>
-    <a href="/">Vissza a főoldalra</a>
+    <style></style>
+    
     <div class="row justify-content-center mt-5">
         <div class="col-lg-4">
             <div class="card">
@@ -37,6 +38,11 @@
                             </div>
                         </div>
                     </form>
+                    <div class="mb-3">
+                        <div class="d-grid">
+                            <a href="/"><button class="btn btn-primary" style="width: 100%;">Vissza a főoldalra</button></a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
