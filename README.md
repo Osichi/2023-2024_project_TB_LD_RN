@@ -45,4 +45,4 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az ***[enyém](https
 
 **2024.01.16**: kijelentkezés létrehozva, design elkezdve
 
-**2024.01.17**: admin panel elkezdve
+**2024.01.17**: admin panel elkezdve, admin panelnek és profil oldal file létrehozva

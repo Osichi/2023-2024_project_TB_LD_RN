@@ -35,10 +35,18 @@ class AuthController extends Controller
         $user = User::where('cegszam', $request->cegszam)->first();
 
         if ($user && Hash::check($request->jelszo, $user->jelszo)) {
-            \Log::info('User successfully logged in.');
             $nev = $user->cegnev;
+            \Log::info($nev);
+            if($nev == "admin"){
+                $admin = $nev;
+                Session::put('admin', $admin);
+                \Log::info("Sikeres admin login");
+                return redirect('/')->with('success', 'Sikeres admin bejelentkezés');
+            }else{
+            \Log::info('User successfully logged in.');
             Session::put('nev', $nev);
             return redirect('/')->with('success', 'Sikeres bejelentkezés');
+            } 
         } else {
             \Log::info('Login attempt failed for user: ' . $request->cegszam . ' , pwd: ' . $request->jelszo);
             return back()->with('error', 'Megadott adatok helytelenek.');

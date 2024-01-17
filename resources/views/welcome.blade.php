@@ -33,6 +33,20 @@
                                <button class="btn btn-primary btn-rounded">Kijelentkezés</button> 
                             </a>
                         </li>
+                @elseif (Session::has('admin'))
+                        <li class="nav-item">
+                            {{ Session::get('admin') }}
+                        </li>
+                        <li>
+                            <a href="">
+                                <button class="btn btn-primary btn-rounded">Admin panel</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/logout" class="nav-link">
+                               <button class="btn btn-primary btn-rounded">Kijelentkezés</button> 
+                            </a>
+                        </li>
                         @else
                 <li class="nav-item">
                     <a href="/register" id="reg" class="nav-link">
