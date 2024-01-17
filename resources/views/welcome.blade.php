@@ -14,12 +14,21 @@
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
+                        @if (Session::has('nev'))
+                        <li class="nav-item">
+                            {{ Session::get('nev') }}
+                        </li>
+                        <li>
+                            <a href="/logout" class="nav-link">Kijelentkezés</a>
+                        </li>
+                        @else
                         <li class="nav-item">
                             <a href="/register" class="nav-link">Regisztráció</a>
                         </li>
                         <li class="nav-item">
                             <a href="/login" class="nav-link">Bejelentkezés</a>
                         </li>
+                        @endif
                     </ul>
                 </div>
             </div>

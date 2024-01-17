@@ -42,3 +42,5 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az ***[enyém](https
 **2023.11.19**: regisztráció létrehozva
 
 **2023.11.26**: bejelentkezés létrehozva
+
+**2024.01.16**: kijelentkezés létrehozva, design elkezdve
