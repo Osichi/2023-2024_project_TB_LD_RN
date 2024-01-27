@@ -50,16 +50,39 @@
             vertical-align: text-top;
         }
 
-        button:hover{
+        .btn:hover{
             box-shadow: 0 0 25px #0B9983;
+            color: #00816D;
         }
 
         h3{
             color: #00816D;
         }
         
-        
+        .form-control{
+            border: 1px solid #002721;
+        }       
 
+        .form-control:focus{    
+            box-shadow: none;
+            border: 1px solid #002721;
+        }
+
+        #formCheck::before{
+            background: #ececec;
+        }
+
+        #formCheck{
+            border: #002721;
+        }
+
+        #formCheck:focus {
+            box-shadow: none;
+        }
+
+        .form-check-label{
+            color: #00816D;
+        }
 
         .text-secondary{
             color: #00816D;
@@ -97,6 +120,7 @@
             border-color: #002721;
             background-color: #002721;
         }
+        
     </style>
     <div class="row vh-100 g-0">
         <!--leftside-->
@@ -118,15 +142,15 @@
 
                     <div class="text-center mb-5">
                         <h3 class="fw-bold">Belépés</h3>
-                        <p class="text-secondary">Lépj be meglévő fiókodba</p>
+                        <p class="text">Lépj be meglévő fiókodba</p>
                     </div>
 
                     <!-- Social login -->
                     <button class="btn btn-outline-secondary btn-lg btn-outline-custom w-100 mb-3">
-                    <i class='bx bxl-google text-danger me-1 fs-6'></i> Belépés Google fiókkal
+                    <i class='bx bxl-google me-1 fs-6'></i> Belépés Google fiókkal
                     </button>
                     <button class="btn btn-outline-secondary btn-lg btn-outline-custom w-100">
-                    <i class='bx bxl-facebook-circle text-primary me-1 fs-6' ></i> Belépés Facebook fiókkal
+                    <i class='bx bxl-facebook-circle me-1 fs-6' ></i> Belépés Facebook fiókkal
                     </button>
                     <!--/ Social login -->
 
@@ -147,20 +171,20 @@
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">
-                            <i class='bx bx-lock-alt' ></i>
+                            <i class='bx bx-lock-alt'></i>
                             </span>
                             <input type="password" class="form-control form-control-lg fs-6" placeholder="Jelszó">
                         </div>
                         <div class="input-group mb-3 display-flex justify-content-between">
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="formCheck">
-                                <label for="formCheck" class="form-check-label text-secondary"><small>Emlékezzen rám</small></label>
+                                <label for="formCheck" class="form-check-label"><small>Emlékezzen rám</small></label>
                             </div>
                             <div>
                                 <small><a href="">Elfelejtette a jelszavát?</a></small>
                             </div>
                         </div>
-                        <button class="btn btn-primary btn-lg w-100 mb-3">Belépés</button>
+                        <button class="btn btn-lg w-100 mb-3">Belépés</button>
                     </form>
                     <!--/form  -->
 
