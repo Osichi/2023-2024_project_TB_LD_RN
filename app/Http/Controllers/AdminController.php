@@ -10,11 +10,13 @@ class AdminController extends Controller
 {
 
     public function adminPage(){
-        if(Session::has('nev') or Session::has('admin')){
-            return redirect('/');
-        }
+        if(Session::has('nev')){
+           return redirect('/')->with('alert', 'Nincs hozzáférésed ehhez!');
+        }else{
 
         return view('/admin');
+    
+        }
     }
 
     public function userList(){

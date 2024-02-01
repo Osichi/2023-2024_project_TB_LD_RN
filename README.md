@@ -14,12 +14,13 @@ npm install
 composer install
 ```
 
-Mivel sok php extension kell hozzá, ezért inkább berakom az ***[enyém](https://anotepad.com/notes/4fiqbgx7)***, ezt a php-(verziószám)/php.ini -fileba kell berakni
+Mivel sok php extension kell hozzá, ezért inkább berakom az **_[enyém](https://anotepad.com/notes/4fiqbgx7)_**, ezt a php-(verziószám)/php.ini -fileba kell berakni
 
 # Changelog
-**2023.10.11**: regisztrálás logika létrehozva 
 
-**2023.10.13**: regisztrálás logika kibővítve 
+**2023.10.11**: regisztrálás logika létrehozva
+
+**2023.10.13**: regisztrálás logika kibővítve
 
 **2023.10.15**: index.php átnevezve mainPage.php -ra, mainPage -n Belépés gomb hozzáadva, login.php létrehozva, login logika hozzáadva
 
@@ -49,4 +50,4 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az ***[enyém](https
 
 **2024.01.24**: főoldal designolva
 
-**2024.02.01**: hozzáférések hozzáadva
+**2024.02.01**: hozzáférések + alert hozzáadva

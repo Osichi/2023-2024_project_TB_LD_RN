@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="welcome.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>Minden Egy Helyen</title>
@@ -267,6 +266,7 @@
       .card {
         margin-bottom: 30px;
       }
+      
     }
   </style>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -281,7 +281,7 @@
             <a class="nav-link" href="#carouselExampleCaptions" onclick="scrollToWelcome()">Főoldal</a>
           </li>
           @if (Session::has('nev'))
-          <li class="nav-item">
+          <li class="nav-item" style="color: red;">
             Üdv {{Session::get('nev')}}
           </li>
           <li class="nav-item">
@@ -315,7 +315,13 @@
       </div>
     </div>
   </nav>
-
+     <script>
+    var msg = '{{Session::get('alert')}}';
+    var exist = '{{Session::has('alert')}}';
+    if(exist){
+      alert(msg);
+    }
+  </script>
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
