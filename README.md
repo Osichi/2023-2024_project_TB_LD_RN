@@ -48,3 +48,5 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az ***[enyém](https
 **2024.01.17**: admin panel elkezdve, admin panelnek és profil oldal file létrehozva
 
 **2024.01.24**: főoldal designolva
+
+**2024.02.01**: hozzáférések hozzáadva

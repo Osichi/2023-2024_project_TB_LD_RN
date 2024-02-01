@@ -11,6 +11,10 @@ use Illuminate\Support\Facades\Session;
 class AuthController extends Controller
 {
     public function register(){
+        if(Session::has('nev') or Session::has('admin')){
+            return redirect('/');
+        }
+
         return view ('register');
     }
     public function registerPost(Request $request){
@@ -26,10 +30,15 @@ class AuthController extends Controller
     }
 
     public function login(){
+        if(Session::has('nev') or Session::has('admin')){
+            return redirect('/');
+        }
+
         return view('login');
     }
 
     public function loginPost(Request $request){
+        
         
 
         $user = User::where('cegszam', $request->cegszam)->first();

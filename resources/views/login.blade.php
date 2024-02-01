@@ -122,6 +122,13 @@
         }
         
     </style>
+
+                    @if(Session::has('error'))
+                    <div class="alert alert-danger" role="alert">
+                        {{ Session::get('error') }}
+                    </div>
+                    @endif
+
     <div class="row vh-100 g-0">
         <!--leftside-->
         <div class="col-lg-6 position-relative d-none d-lg-block">
@@ -160,20 +167,21 @@
                         <div class="divider-content-center">vagy</div>
                     </div>
                     <!--/ Divider -->
-
+                    
                     <!--form  -->
-                    <form action="#">
+                    <form action="{{ route('login') }}" method="POST">
+                    @csrf
                         <div class="input-group mb-3">
                             <span class="input-group-text">
                             <i class='bx bx-user'></i>
                             </span>
-                            <input type="text" class="form-control form-control-lg fs-6" placeholder="Felhasználónév">
+                            <input type="text" name="cegszam" class="form-control form-control-lg fs-6" id="cegszam" placeholder="Cégjegyzékszám">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">
                             <i class='bx bx-lock-alt'></i>
                             </span>
-                            <input type="password" class="form-control form-control-lg fs-6" placeholder="Jelszó">
+                            <input type="password" name="jelszo" id="jelszo" class="form-control form-control-lg fs-6" placeholder="Jelszó">
                         </div>
                         <div class="input-group mb-3 display-flex justify-content-between">
                             <div class="form-check">
