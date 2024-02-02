@@ -1,8 +1,11 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Models\User;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +31,6 @@ Route::post('/login', [AuthController::class, 'loginPost'])->name('login');
 Route::get('/logout', [AuthController::class, 'logout']) ->name('logout');
 
 Route::get('/admin', [AdminController::class, 'adminPage']) ->name('admin');
-#Route::get('/admin', [AdminController::class, 'userList']) -> name('admin');
+Route::get('/delete/{id}',[AdminController::class, 'deleteUser'])->name('delete');
+
+Route::get('/profile', [UserController::class, 'userPage']) ->name('profile');

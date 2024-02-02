@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -283,6 +285,9 @@
           @if (Session::has('nev'))
           <li class="nav-item" style="color: red;">
             Üdv {{Session::get('nev')}}
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/profile">Profilom</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/logout">Kijelentkezés</a>
@@ -681,7 +686,7 @@
         <div class="col-md-12">
           <div class="section-header text-center pb-5">
             <h2>Vedd fel velünk a kapcsolatot!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Fuga officia architecto maxime, odio quasi expedita.</p>
+            <p>Ha van valami ötleted vagy észrevételed, itt jelezheted!</p>
           </div>
         </div>
       </div>
