@@ -15,9 +15,42 @@
                         {{Session::get ('success')}}
                     </div>
                     @endif
-                    <h1>{{$user->cegnev}} proiflja</h1>
+                    <h1>{{Session::get('nev')}} proiflja</h1>
+                    <form action="" method="post">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="cegnev" class="form-label">Cégnév</label>
+                            <input type="text" name="cegnev" class="form-control" id="cegnev" value="{{Session::get('nev')}}" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cegszam" class="form-label">Cégjegyzékszám</label>
+                            <input type="text" name="cegszam" class="form-control" id="cegszam" value="{{Session::get('cegszam')}}" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="jelszo" class="form-label">Jelszó</label>
+                            <input type="password" name="jelszo" class="form-control" id="jelszo" value="{{Session::get('jelszo')}}" required>
+                            <input type="checkbox" onclick="myFunction()">Jelszó megjelenítése
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-grid">
+                                <button class="btn btn-primary">Adatok frissítése</button>
+                            </div>
+                        </div>
+                        
+                    </form>
                     <div class="text-center">
                         <small><a href="/">Vissza a főoldalra</a></small>
                     </div>
+
+                    <script>
+                        function myFunction() {
+  var x = document.getElementById("jelszo");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+                    </script>
 </body>
 </html>

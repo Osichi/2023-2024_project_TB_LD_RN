@@ -47,6 +47,7 @@
                         <div class="mb-3">
                             <label for="jelszo" class="form-label">Jelszó</label>
                             <input type="password" name="jelszo" class="form-control" id="jelszo" placeholder="********" required>
+                            <input type="checkbox" onclick="myFunction()">Jelszó megjelenítése
                         </div>
                         <div class="mb-3">
                             <div class="d-grid">
@@ -64,5 +65,15 @@
             </div>
         </div>
     </div> 
+    <script>
+                        function myFunction() {
+  var x = document.getElementById("jelszo");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+                    </script>
 </body>
 </html>

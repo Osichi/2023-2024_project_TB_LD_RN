@@ -183,6 +183,7 @@
                             </span>
                             <input type="password" name="jelszo" id="jelszo" class="form-control form-control-lg fs-6" placeholder="Jelszó">
                         </div>
+                        <input type="checkbox" onclick="myFunction()">Jelszó megjelenítése
                         <div class="input-group mb-3 display-flex justify-content-between">
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="formCheck">
@@ -208,6 +209,16 @@
         <!--/jobbside-->
 
     </div>
+    <script>
+                        function myFunction() {
+  var x = document.getElementById("jelszo");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+                    </script>
 </body>
 
 </html>
