@@ -90,6 +90,7 @@
         .text-center{
             color: #00816D;
         }
+        
 
         .divider-content-center{
             position: absolute;
@@ -102,19 +103,16 @@
             font-size: 0.8rem;
             font-weight: 500;
             color:#00816D;
-            background-color: #002721
-            ;
+            background-color: #002721;
         }
         .divider{
             margin: 2rem 0;
-
         }
         .btn-outline-custom{
             border: 1px solid #002721;
             background-color:#00816D ;
             color: #002721;
         }
-
         .btn-outline-custom:hover{
             color: #00816D;
             border-color: #002721;
@@ -175,7 +173,7 @@
                             <span class="input-group-text">
                             <i class='bx bx-user'></i>
                             </span>
-                            <input type="text" name="cegszam" class="form-control form-control-lg fs-6" id="cegszam" placeholder="Cégjegyzékszám">
+                            <input type="text" class="form-control form-control-lg fs-6" placeholder="Felhasználónév">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">

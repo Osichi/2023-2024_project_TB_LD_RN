@@ -346,10 +346,7 @@
         <img class="d-block w-100" src="./imgs/center.jpg" alt="...">
         <div class="carousel-caption">
           <h5 class="animate__animated animate__zoomIn animate__delay-0.5s">Szolgáltatásaink</h5>
-          <p class="animate__animated animate__zoomIn animate__delay-0.5s">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores dolor
-            repellat quasi expedita doloribus veniam repudiandae aut itaque, consequuntur
-            laudantium nostrum nobis tempora eveniet voluptatum eos assumenda mollitia veritatis,
-            numquam sed esse? Animi, quam sit eligendi fugiat quaerat doloribus tenetur dolor
+          <p class="animate__animated animate__zoomIn animate__delay-0.5s">Találd meg számodra a legjobb választást egy hétvégi iszogatásra vagy akár egy kis beszélgetésre.
             vero quibusdam soetur ipsum accusantium eius quos! Inventore, fugiat tempora</p>
           <p class="animate__animated animate__zoomIn animate__delay-0.5s"><a href="#" class="btn btn-warning mt-3">Tudj meg többet!</a></p>
         </div>
@@ -455,7 +452,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="section-header text-center pb-5">
-            <h2>Munkáink!</h2>
+            <h2>Legjobb éttermek!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Fuga officia architecto maxime, odio quasi expedita.</p>
           </div>
         </div>
@@ -507,106 +504,7 @@
 
   <!--Carousel kártyák tudja a tököm minekXD-->
 
-  <section id="lapok" class="lapok section-padding">
-    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="image-wrapper">
-                <img src="./imgs/center.jpg" alt="...">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="./imgs/center.jpg" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="./imgs/center.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card-wrapper">
-            <div class="card">
-              <img class="card-img-top" src="./imgs/Valamie2.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="./imgs/center.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="./imgs/center.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card-wrapper">
-            <div class="card">
-              <img class="card-img-top" src="./imgs/logo.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="./imgs/center.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="./imgs/center.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </section>
+  
 
 
 
