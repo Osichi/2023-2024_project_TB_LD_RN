@@ -187,8 +187,11 @@
                         </form>
                         <!--/form  -->
 
-
                         <div class="text-center">
+                            <small> Van már fiókom! <a href="/login" class="fw-bold">Belépés!</a></small>
+                        </div>
+                        <div class="text-center">
+                            
                             <small><a href="/">Vissza a főoldalra</a></small>
                         </div>
                     </div>

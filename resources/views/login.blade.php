@@ -159,9 +159,6 @@
                             <input type="text" class="form-control form-control-lg fs-6" placeholder="Cégjegyzékszám" id="cegszam" name="cegszam">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text">
-                            <i class='bx bx-lock-alt'></i>
-                            </span>
                             <input type="password" name="jelszo" id="jelszo" class="form-control form-control-lg fs-6" placeholder="Jelszó">
                         </div>
                         <div class="input-group mb-3 display-flex justify-content-between">
