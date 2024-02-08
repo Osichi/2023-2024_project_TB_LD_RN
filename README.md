@@ -53,3 +53,5 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az **_[enyém](https
 **2024.02.01**: hozzáférések + alert hozzáadva
 
 **2024.02.02**: admin panel kész, profil oldal elkezve
+
+**2024.02.06**: profil oldalon látszanak a bejelentkezett felhasználó adatai, jelszó megjelenítése gomb hozzáadva a formokhoz

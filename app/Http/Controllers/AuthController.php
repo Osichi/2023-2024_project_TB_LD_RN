@@ -45,6 +45,8 @@ class AuthController extends Controller
 
         if ($user && Hash::check($request->jelszo, $user->jelszo)) {
             $nev = $user->cegnev;
+            $szam = $user->cegszam;
+            $jelszo= $user->jelszo;
             \Log::info($nev);
             if($nev == "admin"){
                 $admin = $nev;
@@ -54,10 +56,12 @@ class AuthController extends Controller
             }else{
             \Log::info('User successfully logged in.');
             Session::put('nev', $nev);
+            Session::put('cegszam', $szam);
+            Session::put('jelszo', $jelszo);
             return redirect('/')->with('success', 'Sikeres bejelentkezés');
             } 
         } else {
-            \Log::info('Login attempt failed for user: ' . $request->cegszam . ' , pwd: ' . $request->jelszo);
+            \Log::info('sikertelen login: ' . $request->cegszam . ' , pwd: ' . $request->jelszo);
             return back()->with('error', 'Megadott adatok helytelenek.');
         }
     }

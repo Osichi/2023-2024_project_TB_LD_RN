@@ -195,11 +195,43 @@
                             <small><a href="/">Vissza a főoldalra</a></small>
                         </div>
                     </div>
+<<<<<<< HEAD
+=======
+                    @endif
+                    <form action="{{route ('register')}}" method="post">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="cegnev" class="form-label">Cégnév</label>
+                            <input type="text" name="cegnev" class="form-control" id="cegnev" placeholder="Cégnév" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cegszam" class="form-label">Cégjegyzékszám</label>
+                            <input type="text" name="cegszam" class="form-control" id="cegszam" placeholder="Cégjegyzékszám" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="jelszo" class="form-label">Jelszó</label>
+                            <input type="password" name="jelszo" class="form-control" id="jelszo" placeholder="********" required>
+                            <input type="checkbox" onclick="myFunction()">Jelszó megjelenítése
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-grid">
+                                <button class="btn btn-primary">Regisztáció</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                    <div class="mb-3">
+                        <div class="d-grid">
+                            <a href="/"><button class="btn btn-primary" style="width: 100%;">Vissza a főoldalra</button></a>
+                            </div>
+                        </div>
+>>>>>>> 69dd41f0e9bd70f6cbe2f824daaf424d1dd33937
                 </div>
             </div>
             <!--/jobbside-->
 
         </div>
+<<<<<<< HEAD
         <script>
             function myFunction() {
                 var x = document.getElementById("jelszo");
@@ -212,4 +244,18 @@
         </script>
     </body>
 
+=======
+    </div> 
+    <script>
+                        function myFunction() {
+  var x = document.getElementById("jelszo");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+                    </script>
+</body>
+>>>>>>> 69dd41f0e9bd70f6cbe2f824daaf424d1dd33937
 </html>
