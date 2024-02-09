@@ -173,7 +173,7 @@
                             <span class="input-group-text">
                             <i class='bx bx-user'></i>
                             </span>
-                            <input type="text" class="form-control form-control-lg fs-6" placeholder="Felhasználónév">
+                            <input type="text" class="form-control form-control-lg fs-6" placeholder="Cégjegyzékszám" name="cegszam" id="cegszam">
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">

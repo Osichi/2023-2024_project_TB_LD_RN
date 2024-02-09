@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\DB;
 
 class AuthController extends Controller
 {
@@ -47,6 +48,7 @@ class AuthController extends Controller
             $nev = $user->cegnev;
             $szam = $user->cegszam;
             $jelszo= $user->jelszo;
+            $id = DB::select('select id from users where cegnev = ?', [$nev]);
             \Log::info($nev);
             if($nev == "admin"){
                 $admin = $nev;
@@ -56,6 +58,7 @@ class AuthController extends Controller
             }else{
             \Log::info('User successfully logged in.');
             Session::put('nev', $nev);
+            Session::put('id', $id);
             Session::put('cegszam', $szam);
             Session::put('jelszo', $jelszo);
             return redirect('/')->with('success', 'Sikeres bejelentkezés');
@@ -70,4 +73,21 @@ class AuthController extends Controller
         Session::flush();
         return redirect('/')->with('success', 'Sikeres kijelentkezés');
     }
+
+
+    public function getUserById($userId)
+    {
+        // Retrieve user by ID
+        $user = User::find($userId);
+    
+        if ($user) {
+            Session::put('id', $user);
+            return $user;
+        } else {
+            // User not found
+            return null;
+        }
+    }
+
 }
+

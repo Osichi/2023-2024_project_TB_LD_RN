@@ -22,6 +22,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/register', [AuthController::class, 'registerPost'])->name('register');
 
@@ -34,3 +35,4 @@ Route::get('/admin', [AdminController::class, 'adminPage']) ->name('admin');
 Route::get('/delete/{id}',[AdminController::class, 'deleteUser'])->name('delete');
 
 Route::get('/profile', [UserController::class, 'userPage']) ->name('profile');
+Route::post('/update/{id}', [UserController::class, 'userUpdate'])-> name('update');

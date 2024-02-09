@@ -15,8 +15,8 @@
                         {{Session::get ('success')}}
                     </div>
                     @endif
-                    <h1>{{Session::get('nev')}} proiflja</h1>
-                    <form action="" method="post">
+                    <h1>Id: {{Session::get('id')}}, {{Session::get('nev')}} proiflja</h1>
+                    <form action="{{url ('users.update') }}" method="post">
                         @csrf
                         <div class="mb-3">
                             <label for="cegnev" class="form-label">Cégnév</label>
