@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -268,7 +266,7 @@
       .card {
         margin-bottom: 30px;
       }
-      
+
     }
   </style>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -287,7 +285,7 @@
             Üdv {{Session::get('nev')}}
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="/profile">Profilom</a>
+            <a class="nav-link" href="/profile">Profilom</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/logout">Kijelentkezés</a>
@@ -316,14 +314,23 @@
           <li class="nav-item active">
             <a class="nav-link" href="#contact" onclick="scrollTocontact()">Elérhetőségek</a>
           </li>
+          <li class="nav-item active">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown button</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-     <script>
-    var msg = '{{Session::get('alert')}}';
-    var exist = '{{Session::has('alert')}}';
-    if(exist){
+  <script>
+    var msg = '{{Session::get('
+    alert ')}}';
+    var exist = '{{Session::has('
+    alert ')}}';
+    if (exist) {
       alert(msg);
     }
   </script>
@@ -337,24 +344,24 @@
       <div class="carousel-item active">
         <img class="d-block w-100 " src="./imgs/ezgif-3-ae21c7af7c.jpg" alt="...">
         <div class="carousel-caption">
-          <h5 class="animate__animated animate__zoomIn animate__delay-0.5s">Éttermek Szegeden</h5>
-          <p class="animate__animated animate__flipInX animate__delay-0.5s">Szegedi éttermek értékelés szerinti sorbarenedezése és helyileg láthatósága, </p>
-          <p class="animate__animated animate__flipInX animate__delay-0.5s"><a href="#" class="btn btn-warning mt-3">Tudj meg többet!</a></p>
+          <h5 class="animate__animated animate__zoomIn animate__delay-0.5s">Éttermek</h5>
+          <p class="animate__animated animate__flipInX animate__delay-0.5s">Azért jött létre a weboldal hogy mindenki könnyen a számára legjobb helyet tudja kiválasztani magának jelenleg még csak szegeden,
+            de a későbbiekben akár több nagyobb városban is! </p>
+          <p class="animate__animated animate__flipInX animate__delay-0.5s"><a href="/ettermek" class="btn btn-warning mt-3">Tudj meg többet!</a></p>
         </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="./imgs/center.jpg" alt="...">
         <div class="carousel-caption">
-          <h5 class="animate__animated animate__zoomIn animate__delay-0.5s">Szolgáltatásaink</h5>
-          <p class="animate__animated animate__zoomIn animate__delay-0.5s">Találd meg számodra a legjobb választást egy hétvégi iszogatásra vagy akár egy kis beszélgetésre.
-            vero quibusdam soetur ipsum accusantium eius quos! Inventore, fugiat tempora</p>
+          <h5 class="animate__animated animate__zoomIn animate__delay-0.5s">Bárok</h5>
+          <p class="animate__animated animate__zoomIn animate__delay-0.5s">Találd meg számodra a legjobb választást egy hétvégi iszogatásra vagy akár egy kis beszélgetésre.</p>
           <p class="animate__animated animate__zoomIn animate__delay-0.5s"><a href="#" class="btn btn-warning mt-3">Tudj meg többet!</a></p>
         </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="./imgs/Valamie2.jpg" alt="...">
         <div class="carousel-caption">
-          <h5 class="animate__animated animate__zoomIn animate__delay-0.5s">Vlami</h5>
+          <h5 class="animate__animated animate__zoomIn animate__delay-0.5s">Büfék</h5>
           <p class="animate__animated animate__zoomIn animate__delay-0.5s">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores dolor
             repellat quasi expedita doloribus veniam repudiandae aut itaque, consequuntur
             laudantium nostrum nobis tempora eveniet voluptatum eos assumenda mollitia veritatis,
@@ -504,7 +511,7 @@
 
   <!--Carousel kártyák tudja a tököm minekXD-->
 
-  
+
 
 
 
@@ -520,7 +527,7 @@
         <div class="col-md-12">
           <div class="section-header text-center pb-5">
             <h2 id="rolunk">Fejlesztői csapatunk</h2>
-            <p>Csapatunk életének termése, sok vér és verejték által létrehozott mestermű,<br> amely most napvilágot lát és meghódítja apádat!!!</p>
+            <p>Csapatunk életének termése, sok vér és verejték által létrehozott mestermű,<br> amely most napvilágot lát!!!</p>
           </div>
         </div>
       </div>
@@ -604,7 +611,7 @@
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <textarea rows="3" required class="form-control" placeholder="A cég neve"></textarea>
+                  <textarea rows="3" required class="form-control" placeholder="Ide írhatsz"></textarea>
                 </div>
               </div>
 

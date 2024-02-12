@@ -15,8 +15,8 @@
                         {{Session::get ('success')}}
                     </div>
                     @endif
-                    <h1>Id: {{Session::get('id')}}, {{Session::get('nev')}} proiflja</h1>
-                    <form action="{{url ('users.update') }}" method="post">
+                    <h1>{{Session::get('nev')}} proiflja</h1>
+                    <form action="{{route ('update') }}" method="put">
                         @csrf
                         <div class="mb-3">
                             <label for="cegnev" class="form-label">Cégnév</label>
@@ -29,11 +29,11 @@
                         <div class="mb-3">
                             <label for="jelszo" class="form-label">Jelszó</label>
                             <input type="password" name="jelszo" class="form-control" id="jelszo" value="{{Session::get('jelszo')}}" required>
-                            <input type="checkbox" onclick="myFunction()">Jelszó megjelenítése
+                            <input type="checkbox" onclick="jelszoHide()">Jelszó megjelenítése
                         </div>
                         <div class="mb-3">
                             <div class="d-grid">
-                                <button class="btn btn-primary">Adatok frissítése</button>
+                                <button type="submit" class="btn btn-primary">Adatok frissítése</button>
                             </div>
                         </div>
                         
@@ -43,7 +43,7 @@
                     </div>
 
                     <script>
-                        function myFunction() {
+                        function jelszoHide() {
   var x = document.getElementById("jelszo");
   if (x.type === "password") {
     x.type = "text";

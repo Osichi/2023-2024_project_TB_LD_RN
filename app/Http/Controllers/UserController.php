@@ -19,8 +19,8 @@ class UserController extends Controller
         return view('/login');
     }
 
-    public function userUpdate(Request $request, string $id){
-        $user = User::findOrFail($id);
+    public function userUpdate(Request $request){
+        $user = Auth::user();
         $user-> cegnev = $request->get('cegnev');
         $user-> cegszam = $request->get('cegszam');
         $user-> jelszo = $request->get('jelszo');

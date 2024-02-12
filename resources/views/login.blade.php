@@ -150,35 +150,15 @@
                         <p class="text">Lépj be meglévő fiókodba</p>
                     </div>
 
-                    <!-- Social login -->
-                    <button class="btn btn-outline-secondary btn-lg btn-outline-custom w-100 mb-3">
-                    <i class='bx bxl-google me-1 fs-6'></i> Belépés Google fiókkal
-                    </button>
-                    <button class="btn btn-outline-secondary btn-lg btn-outline-custom w-100">
-                    <i class='bx bxl-facebook-circle me-1 fs-6' ></i> Belépés Facebook fiókkal
-                    </button>
-                    <!--/ Social login -->
-
-                    <!-- Divider -->
-                    <div class="position-relative">
-                        <hr class="text-secondary divider">
-                        <div class="divider-content-center">vagy</div>
-                    </div>
-                    <!--/ Divider -->
                     
                     <!--form  -->
                     <form action="{{ route('login') }}" method="POST">
                     @csrf
                         <div class="input-group mb-3">
-                            <span class="input-group-text">
-                            <i class='bx bx-user'></i>
-                            </span>
-                            <input type="text" class="form-control form-control-lg fs-6" placeholder="Cégjegyzékszám" name="cegszam" id="cegszam">
+                            
+                            <input type="text" class="form-control form-control-lg fs-6" placeholder="Cégjegyzékszám" id="cegszam" name="cegszam">
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text">
-                            <i class='bx bx-lock-alt'></i>
-                            </span>
                             <input type="password" name="jelszo" id="jelszo" class="form-control form-control-lg fs-6" placeholder="Jelszó">
                         </div>
                         <input type="checkbox" onclick="myFunction()">Jelszó megjelenítése

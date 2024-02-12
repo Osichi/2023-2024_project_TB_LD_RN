@@ -35,4 +35,4 @@ Route::get('/admin', [AdminController::class, 'adminPage']) ->name('admin');
 Route::get('/delete/{id}',[AdminController::class, 'deleteUser'])->name('delete');
 
 Route::get('/profile', [UserController::class, 'userPage']) ->name('profile');
-Route::post('/update/{id}', [UserController::class, 'userUpdate'])-> name('update');
+Route::put('/update', [UserController::class, 'userUpdate'])-> name('update');
