@@ -44,4 +44,7 @@ Route::post('/update', [UserController::class, 'userUpdate'])-> name('update');
 Route::post('/updatePWD',[UserController::class, 'userUpdatePWD'])->name('updatePWD');
 Route::post('/updatePic', [UserController::class, 'updatePic'])-> name('updatePic');
 
+//éttermes rész
 Route::get('/ettermek', [EtteremController::class, 'etteremPage'])->name('ettermek');
+Route::get('/feltoltes', [EtteremController::class, 'feltoltesPage'])->name('feltoltes');
+Route::post('/feltolt', [EtteremController::class, 'feltoltes'])->name('feltolt');

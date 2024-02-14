@@ -58,4 +58,4 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az **_[enyém](https
 
 **2024.02.06**: profil oldalon látszanak a bejelentkezett felhasználó adatai, jelszó megjelenítése gomb hozzáadva a formokhoz
 
-**2024.02.14**: profil oldal frissítve, adatok módosíthatók, profilkép hozzáadva, éttermek fül hozzáadva
+**2024.02.14**: profil oldal frissítve, adatok módosíthatók, profilkép hozzáadva, éttermek fül hozzáadva, kezdetleges posztolás létrehozva
