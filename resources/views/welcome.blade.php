@@ -281,8 +281,11 @@
             <a class="nav-link" href="#carouselExampleCaptions" onclick="scrollToWelcome()">Főoldal</a>
           </li>
           @if (Session::has('nev'))
-          <li class="nav-item" style="color: red;">
+          <li class="nav-item" style="color: black;">
             Üdv {{Session::get('nev')}}
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/profile"><img src="{{Session::get("profilkep")}}" alt="" width=50px></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/profile">Profilom</a>
