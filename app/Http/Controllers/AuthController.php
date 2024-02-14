@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\DB;
 
 class AuthController extends Controller
 {
@@ -23,6 +24,7 @@ class AuthController extends Controller
         $user->cegnev = $request->cegnev;
         $user->cegszam = $request->cegszam;
         $user->jelszo = Hash::make($request->jelszo);
+        $user->profilkep = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png";
 
         $user->save();
         \Log::info('User successfully registered.');
@@ -44,9 +46,12 @@ class AuthController extends Controller
         $user = User::where('cegszam', $request->cegszam)->first();
 
         if ($user && Hash::check($request->jelszo, $user->jelszo)) {
+            
             $nev = $user->cegnev;
             $szam = $user->cegszam;
             $jelszo= $user->jelszo;
+            $profilkep= $user->profilkep;
+            $id = $user->id;
             \Log::info($nev);
             if($nev == "admin"){
                 $admin = $nev;
@@ -56,8 +61,10 @@ class AuthController extends Controller
             }else{
             \Log::info('User successfully logged in.');
             Session::put('nev', $nev);
+            Session::put('id', $id);
             Session::put('cegszam', $szam);
             Session::put('jelszo', $jelszo);
+            Session::put('profilkep', $profilkep);
             return redirect('/')->with('success', 'Sikeres bejelentkezés');
             } 
         } else {
@@ -70,4 +77,21 @@ class AuthController extends Controller
         Session::flush();
         return redirect('/')->with('success', 'Sikeres kijelentkezés');
     }
+
+
+    public function getUserById($userId)
+    {
+        // Retrieve user by ID
+        $user = User::find($userId);
+    
+        if ($user) {
+            Session::put('id', $user);
+            return $user;
+        } else {
+            // User not found
+            return null;
+        }
+    }
+
 }
+

@@ -311,11 +311,17 @@
             <a class="nav-link" href="#carouselExampleCaptions" onclick="scrollToWelcome()">Főoldal</a>
           </li>
           @if (Session::has('nev'))
-          <li class="nav-item" style="color: red;">
+          <li class="nav-item" style="color: black;">
             Üdv {{Session::get('nev')}}
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/profile"><img src="{{Session::get("profilkep")}}" alt="" width=50px></a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/profile">Profilom</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ettermek">Éttermek</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/logout">Kijelentkezés</a>
@@ -325,11 +331,15 @@
             Üdv {{Session::get('admin')}}
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/logout">Kijelentkezés</a>
+            <a class="nav-link" href="/ettermek">Éttermek</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/admin">Admin panel</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Kijelentkezés</a>
+          </li>
+          
           @else
           <li class="nav-item active">
             <a class="nav-link" href="/login">Bejelentkezés</a>
@@ -524,7 +534,7 @@
         <div class="col-md-12">
           <div class="section-header text-center pb-5">
             <h2 id="rolunk">Fejlesztői csapatunk</h2>
-            <p>Csapatunk életének termése, sok vér és verejték által létrehozott mestermű,<br> amely most napvilágot lát és meghódítja apádat!!!</p>
+            <p>Csapatunk életének termése, sok vér és verejték által létrehozott mestermű,<br> amely most napvilágot lát!!!</p>
           </div>
         </div>
       </div>
@@ -608,7 +618,7 @@
               </div>
               <div class="col-md-12">
                 <div class="mb-3">
-                  <textarea rows="3" required class="form-control" placeholder="A cég neve"></textarea>
+                  <textarea rows="3" required class="form-control" placeholder="Ide írhatsz"></textarea>
                 </div>
               </div>
 

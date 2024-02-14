@@ -195,12 +195,15 @@
                             <small><a href="/">Vissza a főoldalra</a></small>
                         </div>
                     </div>
+<<<<<<< HEAD
                 </div>
+=======
+                    
+>>>>>>> d33bec3e6479e872588a5f8ebbf97e96e0ec5629
             </div>
             <!--/jobbside-->
 
         </div>
-<<<<<<< HEAD
         <script>
             function myFunction() {
                 var x = document.getElementById("jelszo");
@@ -213,18 +216,4 @@
         </script>
     </body>
 
-=======
-    </div> 
-    <script>
-                        function myFunction() {
-  var x = document.getElementById("jelszo");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
-}
-                    </script>
-</body>
->>>>>>> 69dd41f0e9bd70f6cbe2f824daaf424d1dd33937
 </html>
