@@ -291,6 +291,9 @@
             <a class="nav-link" href="/profile">Profilom</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/ettermek">Éttermek</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/logout">Kijelentkezés</a>
           </li>
           @elseif (Session::has('admin'))
@@ -298,11 +301,15 @@
             Üdv {{Session::get('admin')}}
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/logout">Kijelentkezés</a>
+            <a class="nav-link" href="/ettermek">Éttermek</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/admin">Admin panel</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logout">Kijelentkezés</a>
+          </li>
+          
           @else
           <li class="nav-item active">
             <a class="nav-link" href="/login">Bejelentkezés</a>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EtteremController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
@@ -42,3 +43,5 @@ Route::get('/profile', [UserController::class, 'userPage']) ->name('profile');
 Route::post('/update', [UserController::class, 'userUpdate'])-> name('update');
 Route::post('/updatePWD',[UserController::class, 'userUpdatePWD'])->name('updatePWD');
 Route::post('/updatePic', [UserController::class, 'updatePic'])-> name('updatePic');
+
+Route::get('/ettermek', [EtteremController::class, 'etteremPage'])->name('ettermek');
