@@ -1,5 +1,7 @@
 # FONTOS, AMIKOR LEHÚZOD:
 
+[php](https://www.php.net/downloads.php)
+
 [Composer](https://getcomposer.org/download/)
 
 [Node.js](https://nodejs.org/en/)
