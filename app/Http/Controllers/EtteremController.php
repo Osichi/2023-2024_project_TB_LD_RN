@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Post;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\DB;
 
 class EtteremController extends Controller
 {
     public function etteremPage(){
-        return view('ettermek');
+        $posts = DB::table('posts')->get();
+        return view('ettermek', compact('posts'));
     }
     public function feltoltesPage(){
         return view('hozzaadas');
@@ -22,6 +24,7 @@ class EtteremController extends Controller
         $cim= $request-> cim;
         $kategoria= $request->kategoria;
         $kep= $request-> kep;
+        $weboldal=$request->weboldal;
         $upload = DB::table('posts')
             ->insert([
                 'cegid' => $id,
@@ -30,13 +33,20 @@ class EtteremController extends Controller
                 'cim'=> $cim,
                 'kategoria'=> $kategoria,
                 'kep'=> $kep,
+                'weboldal'=>$weboldal
             ]);
 
-            if ($upload) {
-                return redirect('/ettermek')->with('success', 'Sikeres feltöltés.');
-            } else {
-                return redirect('/feltoltes')->with('error', 'Hiba történt a feltöltés közben.');
-            }
+                if ($upload) {
+                    return redirect('/ettermek')->with('success', 'Sikeres feltöltés.');
+                } else {
+                    return redirect('/feltoltes')->with('error', 'Hiba történt a feltöltés közben.');
+                }
 
+    }
+
+    public function deleteLocation($id){
+        $posts = Post::findOrFail($id);
+        $posts->delete();
+        return back()->with('success', 'Helyszín törölve!');
     }
 }

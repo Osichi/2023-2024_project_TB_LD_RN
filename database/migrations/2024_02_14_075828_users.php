@@ -14,7 +14,7 @@ return new class extends Migration
             $table->string('cegnev');
             $table->string('cegszam', 64)->unique();
             $table->string('jelszo');
-            $table->string('profilkep');
+            $table->longText('profilkep');
             $table->string('updated_at');
             $table->string('created_at');
         });

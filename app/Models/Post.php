@@ -16,5 +16,6 @@ class Post extends Model
         'cim',
         'kategoria',
         'kep',
+        'weboldal',
     ];
 }

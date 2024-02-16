@@ -20,7 +20,7 @@
                     @endif
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><span class="text-success" id="MEH">MEH </span>Minden egy helyen</a>
+      <a class="navbar-brand" href="/"><span class="text-success" id="MEH">MEH </span>Minden egy helyen</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -70,5 +70,24 @@
       </div>
     </div>
   </nav>
+
+  @foreach($posts as $post)
+  <div class="card" style="width: 18rem;">
+  <img src='{{$post->kep}}' class="card-img-top" >
+  <div class="card-body">
+    <h5 class="card-title">{{$post->nev}}</h5>
+    <ul>
+      <li>{{$post->telefonszam}}</li>
+      <li>{{$post->cim}}</li>
+      <li>{{$post->kategoria}}</li>
+    </ul>
+    <a href="{{$post->weboldal}}" class="btn btn-primary">Online elérhetőség</a>
+    @if(Session::has('admin'))
+    <a href="{{url('/deleteLoc/'.$post->id) }}" onclick="return confirm('Biztos törölni akarod?')" class="btn btn-danger">Törlés</a>
+    @endif
+  </div>
+</div>
+  @endforeach
+
 </body>
 </html>

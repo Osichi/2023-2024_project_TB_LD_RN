@@ -37,6 +37,7 @@ Route::get('/logout', [AuthController::class, 'logout']) ->name('logout');
 //admin felület
 Route::get('/admin', [AdminController::class, 'adminPage']) ->name('admin');
 Route::get('/delete/{id}',[AdminController::class, 'deleteUser'])->name('delete');
+Route::get('/deleteLoc/{id}',[EtteremController::class, 'deleteLocation'])->name('delete');
 
 //felhasználó felület
 Route::get('/profile', [UserController::class, 'userPage']) ->name('profile');
@@ -48,3 +49,4 @@ Route::post('/updatePic', [UserController::class, 'updatePic'])-> name('updatePi
 Route::get('/ettermek', [EtteremController::class, 'etteremPage'])->name('ettermek');
 Route::get('/feltoltes', [EtteremController::class, 'feltoltesPage'])->name('feltoltes');
 Route::post('/feltolt', [EtteremController::class, 'feltoltes'])->name('feltolt');
+Route::get('/deleteLoc/{id}',[EtteremController::class, 'deleteLocation'])->name('delete');

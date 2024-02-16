@@ -19,6 +19,8 @@
                         {{Session::get ('success')}}
                     </div>
                     @endif
+
+                    <h1>Felhasználók</h1>
 <table class="table table-hover">
 
 <thead>
@@ -57,6 +59,25 @@
 </tbody>
 
 </table>
+<h1>Helyszínek</h1>
+@foreach($posts as $post)
+  <div class="card" style="width: 18rem;">
+  <img src='{{$post->kep}}' class="card-img-top" >
+  <div class="card-body">
+    <h5 class="card-title">{{$post->nev}}</h5>
+    <ul>
+      <li>{{$post->telefonszam}}</li>
+      <li>{{$post->cim}}</li>
+      <li>{{$post->kategoria}}</li>
+    </ul>
+    <a href="{{$post->weboldal}}" class="btn btn-primary">Online elérhetőség</a>
+    @if(Session::has('admin'))
+    <a href="{{url('/deleteLoc/'.$post->id) }}" onclick="return confirm('Biztos törölni akarod?')" class="btn btn-danger">Törlés</a>
+    @endif
+  </div>
+</div>
+  @endforeach
+
 <div class="text-center">
                         <small><a href="/">Vissza a főoldalra</a></small>
                     </div>

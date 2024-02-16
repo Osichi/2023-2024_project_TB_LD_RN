@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Post;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 
 class AdminController extends Controller
@@ -14,7 +16,8 @@ class AdminController extends Controller
            return redirect('/')->with('alert', 'Nincs hozzáférésed ehhez!');
         }else{
                 $users = User::all();
-                 return view('/admin', compact('users') );
+                $posts = DB::table('posts')->get();
+                 return view('/admin', compact('users'), compact('posts') );
     
         }
     }

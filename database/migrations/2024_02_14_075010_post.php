@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('cim');
             $table->string('kategoria');
             $table->string('kep');
+            $table->string('weboldal');
         });
     }
 

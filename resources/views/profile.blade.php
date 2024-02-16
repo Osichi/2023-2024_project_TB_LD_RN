@@ -23,7 +23,7 @@
                     <h1>{{Session::get('nev')}} profilja</h1>
                     
                     <h2>Profilkép módisítása</h2>
-                                <img class="img-fluid" src="{{Session::get('profilkep')}}" alt="" width=100px>
+                                <img class="img-fluid" src="{{Session::get('profilkep')}}" alt="kep" width=100px>
                                 <form action="{{route('updatePic')}}" method="post">
                                 @csrf
                                 <div class="mb-3">

@@ -35,6 +35,9 @@
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control form-control-lg fs-6" placeholder="Kép" id="kep" name="kep" required>
                             </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control form-control-lg fs-6" placeholder="Weboldal címe" id="weboldal" name="weboldal" required>
+                            </div>
                             <button class="btn btn-lg w-100 mb-3">Feltöltés</button>
                         </form>
 </body>
