@@ -195,7 +195,11 @@
                             <small><a href="/">Vissza a főoldalra</a></small>
                         </div>
                     </div>
+<<<<<<< HEAD
+                </div>
+=======
                     
+>>>>>>> d33bec3e6479e872588a5f8ebbf97e96e0ec5629
             </div>
             <!--/jobbside-->
 
