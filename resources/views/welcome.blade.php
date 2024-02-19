@@ -12,6 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/777beffd71.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{{url('css/welcome.css')}}">
   <title>Minden Egy Helyen</title>
 </head>
 
@@ -49,256 +50,7 @@
     })
   </script>
 
-  <style>
-    * {
-      font-family: montserrat;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Poppins, sans-serif;
-    }
 
-    body {
-      background: #002721;
-      color: white;
-
-    }
-
-
-    .navbar-brand .text-warning {
-      color: #00816D;
-    }
-
-    .btn-warning {
-      color: white;
-      background: #00816D;
-      border: #00816D;
-    }
-
-    .btn-warning:hover {
-      color: white;
-      background: #002721;
-      border: #002721;
-    }
-
-    .section-padding {
-      padding: 100px 0;
-    }
-
-    .carousel-item {
-      height: 100vh;
-      min-height: 300px;
-    }
-
-    .carousel-caption {
-      bottom: 220px;
-      z-index: 2;
-      opacity: 1;
-    }
-
-    .carousel-caption h5 {
-      font-size: 45px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-top: 25px;
-      opacity: 1;
-    }
-
-    .carousel-caption p {
-      width: 60%;
-      margin: auto;
-      font-size: 18px;
-      line-height: 1.9;
-      opacity: 1;
-    }
-
-    .carousel-inner::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: 1;
-    }
-
-    .navbar-nav a {
-      position: relative;
-      font-size: 18px;
-      color: #00816D;
-      font-weight: 500;
-      text-decoration: none;
-      margin-left: 40px;
-    }
-
-    .navbar-nav a::before {
-      content: '';
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: #002721;
-      transition: .3s;
-    }
-
-    .navbar-nav a:hover::before {
-      width: 100%;
-    }
-
-    .navbar-light .navbar-brand {
-      color: #000;
-      font-size: 25px;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 2px;
-    }
-
-    .navbar-light .navbar-brand:focus,
-    .navbar-light .navbar-brand:hover {
-      color: #00816D;
-    }
-
-    .navbar-light .navbar-nav .navbar-link {
-      color: #00816D;
-    }
-
-    .w-100 {
-      height: 100vh;
-    }
-
-    .services .card-body i {
-      font-size: 50px;
-    }
-
-    .team .card-body i {
-      font-size: 20px;
-    }
-
-    .portfolio .card {
-      box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
-    }
-
-    .team .card {
-      box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
-    }
-
-    .img-fluid {
-      max-width: 100%;
-      height: 200px;
-      border-radius: 50%;
-    }
-
-    .img-fluid:hover {
-      opacity: 0.8;
-    }
-
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropdown-item {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      padding: 12px 16px;
-      z-index: 1;
-    }
-
-    .dropdown:hover .dropdown-item {
-      display: block;
-      border: none;
-    }
-
-
-
-    .card {
-      border: none;
-      border-radius: 0;
-      box-shadow: 2px;
-    }
-
-    .image-wrapper {
-      height: 22vw;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .image-wrapper img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-
-    .card-wrapper {
-      display: flex;
-      box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
-    }
-
-    .lapok .card {
-      margin: 0 .5em;
-      width: calc(100%/3);
-
-    }
-
-    /* === Responsive css ===*/
-
-    @media only screen and (min-width: 767px) and (max-width:991px) {
-      .carousel-caption {
-        bottom: 370px;
-      }
-
-      .carousel-caption p {
-        width: 100%;
-      }
-
-      .card {
-        margin-bottom: 30px;
-      }
-
-      .img-area img {
-        width: 100%;
-      }
-    }
-
-    @media only screen and (max-width: 767px) {
-      .navbar-nav {
-        text-align: center;
-      }
-
-      .carousel-caption {
-        bottom: 125px;
-      }
-
-      .carousel-caption h5 {
-        font-size: 17px;
-      }
-
-      .carousel-caption a {
-        padding: 10px 15px;
-      }
-
-      .carousel-caption p {
-        width: 100%;
-        line-height: 1.6;
-        font-size: 12px;
-      }
-
-      .about-text {
-        padding-top: 50px;
-      }
-
-      .card {
-        margin-bottom: 30px;
-      }
-
-    }
-  </style>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#"><span class="text-success" id="MEH">MEH </span>Minden egy helyen</a>
@@ -339,7 +91,7 @@
           <li class="nav-item">
             <a class="nav-link" href="/logout">Kijelentkezés</a>
           </li>
-          
+
           @else
           <li class="nav-item active">
             <a class="nav-link" href="/login">Bejelentkezés</a>
@@ -353,16 +105,6 @@
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#contact" onclick="scrollTocontact()">Elérhetőségek</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown menü
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Elem 1</a>
-              <a class="dropdown-item" href="#">Elem 2</a>
-              <a class="dropdown-item" href="#">Elem 3</a>
-            </div>
           </li>
         </ul>
       </div>
@@ -493,6 +235,13 @@
                 <img src="./imgs/logo.png" alt="" class="img-fluid">
               </div>
               <h3 class="card-title">Building make</h3>
+              <div class="stars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi quidem impedit delectus, consectetur quae est perferendis harum commodi reprehenderit!</p>
               <button class="btn btn-warning">Learn more</button>
             </div>
@@ -506,6 +255,13 @@
                 <img src="./imgs/logo.png" alt="" class="img-fluid">
               </div>
               <h3 class="card-title">Building make</h3>
+              <div class="stars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi quidem impedit delectus, consectetur quae est perferendis harum commodi reprehenderit!</p>
               <button class="btn btn btn-warning">Learn more</button>
             </div>
