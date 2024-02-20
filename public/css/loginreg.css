@@ -38,6 +38,7 @@ label{
     font-weight: bold;
     cursor: pointer;
     transition: .5s ease-in-out;
+    margin-bottom: 0;
 }
 
 input {
@@ -72,7 +73,7 @@ button{
 }
 
 button:hover{
-    background: #00816D;
+    background: #01c0a3;
     color: #002721;
 }
 
@@ -88,6 +89,17 @@ button:hover{
 .login label{
     color: #002721;
     transform: scale(.6);
+    margin-bottom: 10px;
+}
+
+small{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 #chk:checked ~ .login{
@@ -100,4 +112,32 @@ button:hover{
 
 #chk:checked ~ .signup label{
     transform: scale(.6);
+}
+
+.link{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    color: #002721;
+}
+
+a{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    color: #002721;
+}
+
+.link:hover {
+    color: #00816D;
+}
+
+a:hover{
+    color: #01c0a3;
 }
