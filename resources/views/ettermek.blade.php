@@ -148,6 +148,9 @@
       @if(Session::has('admin'))
       <a href="{{url('/deleteLoc/'.$post->id) }}" onclick="return confirm('Biztos törölni akarod?')" class="btn btn-danger">Törlés</a>
       @endif
+      @if(Session::get('id') == $post->cegid)
+      <a href="{{url('/deleteLoc/'.$post->id) }}" onclick="return confirm('Biztos törölni akarod?')" class="btn btn-danger">Törlés</a>
+      @endif
     </div>
   </div>
   </div>
