@@ -121,7 +121,7 @@
             <a class="nav-link" href="#contact" onclick="scrollTocontact()">Elérhetőségek</a>
           </li>
           @endif
-          
+
         </ul>
       </div>
     </div>
@@ -231,12 +231,16 @@
                 <img src="./imgs/fooldal.jpg" alt="" class="img img-fluid">
               </div>
               <h3 class="card-title">Vitrin Szeged</h3>
-              <div class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+              <div class="ertekeles">
+
+                <div class="stars">
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <p id="ertekelo-eredmeny"></p>
               </div>
               <p class="lead">Hogyha egy előkelőbb helyet keresel a hétvégi italozásra, itt megtaláltad!</p>
               <button class="btn btn-warning">Learn more</button>
@@ -435,6 +439,7 @@
       </div>
     </div>
   </section>
+
 
 
 

@@ -13,69 +13,44 @@
 </head>
 
 <body>
-
-<<<<<<< HEAD
-
     <div class="main">
-        <input type="checkbox" id="chk" aria-hidden="true">
-
         <div class="signup">
-            <form>
-                <label for="chk" aria-hidden="true">Regisztráció</label>
-                <small>Hozzon létre egy új fiókot!</small>
-                <input type="text" name="txt" placeholder="Cégnév" required="">
-                <input type="email" name="email" placeholder="Cégjegyzékszám" required="">
-                <input type="password" name="pswd" placeholder="Jelszó" required="">
-                <button>Regisztráció</button>
-                <a href="/" class="link">Vissza a főoldalra!</a>
-            </form>
-=======
-<div class="main">
-@if (Session::has ('success'))
-                    <div class="alert alert-success" role="alert">
-                        {{Session::get ('success')}}
-                    </div>
-                    @elseif(Session::has('error'))
-                    <div class="alert alert-danger" role="alert">
-                        {{Session::get ('error')}}
-                    </div>
-                    @endif
-            <input type="checkbox" id="chk" aria-hidden="true">
+            <div class="main">
+                @if (Session::has ('success'))
+                <div class="alert alert-success" role="alert">
+                    {{Session::get ('success')}}
+                </div>
+                @elseif(Session::has('error'))
+                <div class="alert alert-danger" role="alert">
+                    {{Session::get ('error')}}
+                </div>
+                @endif
+                <input type="checkbox" id="chk" aria-hidden="true">
 
-            <div class="signup">
-            <form action="{{ route('register') }}" method="POST">
-                            @csrf
-                            <label for="chk" aria-hidden="true">Sign up</label>
-                                <input type="text"  placeholder="Cégjegyzékszám" id="cegszam" name="cegszam" required>
-                                <input type="text"  placeholder="Cégnév" id="cegnev" name="cegnev" required>
-                                <input type="password"  placeholder="Jelszó" id="jelszo" name="jelszo" required>
-                            <button >Regisztráció</button>
-                        </form>
-            </div>
-
-            <div class="login">
-            <form action="{{ route('login') }}" method="POST">
-                    @csrf
-                    <label for="chk" aria-hidden="true">Login</label>
-                            <input type="text"  placeholder="Cégjegyzékszám" id="cegszam" name="cegszam" required>
-                            <input type="password" name="jelszo" id="jelszo"  placeholder="Jelszó" required>
-                        <button >Belépés</button>
+                <div class="signup">
+                    <form action="{{ route('register') }}" method="POST">
+                        @csrf
+                        <label for="chk" aria-hidden="true">Sign up</label>
+                        <input type="text" placeholder="Cégjegyzékszám" id="cegszam" name="cegszam" required>
+                        <input type="text" placeholder="Cégnév" id="cegnev" name="cegnev" required>
+                        <input type="password" placeholder="Jelszó" id="jelszo" name="jelszo" required>
+                        <button>Regisztráció</button>
+                        <a href="/" class="link">Vissza a főoldalra!</a>
                     </form>
-            </div>
->>>>>>> b09a0b9ff0777fe299c68e296eae69db2479d66b
-        </div>
+                </div>
 
-        <div class="login">
-            <form>
-                <label for="chk" aria-hidden="true">Bejelentkezés</label>
-                <small>Lépjen be meglévő fiókjába!</small>
-                <input type="email" name="email" placeholder="Cégjegyzékszám" required="">
-                <input type="password" name="pswd" placeholder="Jelszó" required="">
-                <button>Belépés</button>
-                <a href="/">Vissza a főoldalra!</a>
-            </form>
+                <div class="login">
+                    <form action="{{ route('login') }}" method="POST">
+                        @csrf
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="text" placeholder="Cégjegyzékszám" id="cegszam" name="cegszam" required>
+                        <input type="password" name="jelszo" id="jelszo" placeholder="Jelszó" required>
+                        <button>Belépés</button>
+                        <a href="/">Vissza a főoldalra!</a>
+                    </form>
+                </div>
+            </div>
         </div>
-        
     </div>
 </body>
 
