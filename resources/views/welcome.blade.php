@@ -330,9 +330,7 @@
           <li class="nav-item">
             Üdv {{Session::get('admin')}}
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/ettermek">Éttermek</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="/admin">Admin panel</a>
           </li>
@@ -348,6 +346,9 @@
             <a class="nav-link" href="/register">Regisztráció</a>
           </li>
           @endif
+          <li class="nav-item">
+            <a class="nav-link" href="/ettermek">Éttermek</a>
+          </li>
           <li class="nav-item active">
             <a class="nav-link" href="#team" onclick="scrollToRolunk()">Rólunk</a>
           </li>
