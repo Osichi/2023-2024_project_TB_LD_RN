@@ -24,6 +24,7 @@ class EtteremController extends Controller
         $cim= $request-> cim;
         $kategoria= $request->kategoria;
         $kep= $request-> kep;
+        $leiras=$request->leiras;
         $weboldal=$request->weboldal;
         $upload = DB::table('posts')
             ->insert([
@@ -32,6 +33,7 @@ class EtteremController extends Controller
                 'telefonszam'=> $telefonszam,
                 'cim'=> $cim,
                 'kategoria'=> $kategoria,
+                'leiras'=>$leiras,
                 'kep'=> $kep,
                 'weboldal'=>$weboldal
             ]);

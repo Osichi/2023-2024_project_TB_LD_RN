@@ -131,9 +131,11 @@
       color: #00816D;
     }
   </style>
-
+<div class="container">
+  <div class="row">
   @foreach($posts as $post)
-  <div class="card" style="width: 18rem;">
+  <div class="col-md-4">
+  <div class="card" >
     <img src='{{$post->kep}}' class="card-img-top">
     <div class="card-body">
       <h5 class="card-title">{{$post->nev}}</h5>
@@ -146,10 +148,15 @@
       @if(Session::has('admin'))
       <a href="{{url('/deleteLoc/'.$post->id) }}" onclick="return confirm('Biztos törölni akarod?')" class="btn btn-danger">Törlés</a>
       @endif
+      @if(Session::get('id') == $post->cegid)
+      <a href="{{url('/deleteLoc/'.$post->id) }}" onclick="return confirm('Biztos törölni akarod?')" class="btn btn-danger">Törlés</a>
+      @endif
     </div>
   </div>
+  </div>
   @endforeach
-
+  </div>
+  </div>
 </body>
 
 </html>

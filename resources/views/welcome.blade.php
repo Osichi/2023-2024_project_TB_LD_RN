@@ -72,7 +72,15 @@
           <li class="nav-item">
             <a class="nav-link" href="/profile">Profilom</a>
           </li>
-          
+          <li class="nav-item">
+            <a class="nav-link" href="/ettermek">Éttermek</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#team" onclick="scrollToRolunk()">Rólunk</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#contact" onclick="scrollTocontact()">Elérhetőségek</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="/logout">Kijelentkezés</a>
           </li>
@@ -82,6 +90,15 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/admin">Admin panel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ettermek">Éttermek</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#team" onclick="scrollToRolunk()">Rólunk</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#contact" onclick="scrollTocontact()">Elérhetőségek</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/logout">Kijelentkezés</a>
@@ -94,7 +111,6 @@
           <li class="nav-item active">
             <a class="nav-link" href="/register">Regisztráció</a>
           </li>
-          @endif
           <li class="nav-item">
             <a class="nav-link" href="/ettermek">Éttermek</a>
           </li>
@@ -104,6 +120,8 @@
           <li class="nav-item active">
             <a class="nav-link" href="#contact" onclick="scrollTocontact()">Elérhetőségek</a>
           </li>
+          @endif
+          
         </ul>
       </div>
     </div>

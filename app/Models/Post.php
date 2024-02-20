@@ -15,6 +15,7 @@ class Post extends Model
         'telefonszam',
         'cim',
         'kategoria',
+        'leiras',
         'kep',
         'weboldal',
     ];
