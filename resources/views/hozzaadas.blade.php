@@ -30,7 +30,15 @@
                                 <input type="text" class="form-control form-control-lg fs-6" placeholder="Cím" id="cim" name="cim" required>
                             </div>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control form-control-lg fs-6" placeholder="Kategória" id="kategoria" name="kategoria" required>
+                            <select class="form-select" aria-label="Default select example" id="kategoria" name="kategoria" required>
+                            <option selected>Kategória</option>
+                            <option value="Bár">Bár</option>
+                            <option value="Étterem">Étterem</option>
+                            <option value="Kajálda">Kajálda</option>
+                            </select>
+                            </div>
+                            <div class="input-group mb-3">
+                            <textarea class="form-control" placeholder="Leírás"  id="leiras" name="leiras"></textarea>
                             </div>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control form-control-lg fs-6" placeholder="Kép" id="kep" name="kep" required>

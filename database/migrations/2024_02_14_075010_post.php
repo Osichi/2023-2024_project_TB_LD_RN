@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('telefonszam');
             $table->string('cim');
             $table->string('kategoria');
+            $table->longText('leiras');
             $table->string('kep');
             $table->string('weboldal');
         });
