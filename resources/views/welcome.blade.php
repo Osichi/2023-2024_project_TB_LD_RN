@@ -72,18 +72,13 @@
           <li class="nav-item">
             <a class="nav-link" href="/profile">Profilom</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/ettermek">Éttermek</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="/logout">Kijelentkezés</a>
           </li>
           @elseif (Session::has('admin'))
           <li class="nav-item">
             Üdv {{Session::get('admin')}}
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/ettermek">Éttermek</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/admin">Admin panel</a>
@@ -100,6 +95,9 @@
             <a class="nav-link" href="/register">Regisztráció</a>
           </li>
           @endif
+          <li class="nav-item">
+            <a class="nav-link" href="/ettermek">Éttermek</a>
+          </li>
           <li class="nav-item active">
             <a class="nav-link" href="#team" onclick="scrollToRolunk()">Rólunk</a>
           </li>
@@ -270,6 +268,156 @@
       </div>
     </div>
   </section>
+  <section id="portfolio" class="portfolio section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-header text-center pb-5">
+            <h2>Legjobb Bárok!</h2>
+            <p>A hónap legjobb értékelését kapott éttermek Szegeden!<br> Itt láthatod a legjobb éttermeket amelyek talán kedvedre lesznek!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb4">
+                <img src="./imgs/fooldal.jpg" alt="" class="img img-fluid">
+              </div>
+              <h3 class="card-title">Vitrin Szeged</h3>
+              <div class="stars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="lead">Hogyha egy előkelőbb helyet keresel a hétvégi italozásra, itt megtaláltad!</p>
+              <button class="btn btn-warning">Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb4">
+                <img src="./imgs/logo.png" alt="" class="img-fluid">
+              </div>
+              <h3 class="card-title">Building make</h3>
+              <div class="stars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi quidem impedit delectus, consectetur quae est perferendis harum commodi reprehenderit!</p>
+              <button class="btn btn-warning">Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb4">
+                <img src="./imgs/logo.png" alt="" class="img-fluid">
+              </div>
+              <h3 class="card-title">Building make</h3>
+              <div class="stars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi quidem impedit delectus, consectetur quae est perferendis harum commodi reprehenderit!</p>
+              <button class="btn btn btn-warning">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-header text-center pb-5">
+            <h2>Legjobb Kajáldák!</h2>
+            <p>A hónap legjobb értékelését kapott éttermek Szegeden!<br> Itt láthatod a legjobb éttermeket amelyek talán kedvedre lesznek!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb4">
+                <img src="./imgs/fooldal.jpg" alt="" class="img img-fluid">
+              </div>
+              <h3 class="card-title">Vitrin Szeged</h3>
+              <div class="stars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="lead">Hogyha egy előkelőbb helyet keresel a hétvégi italozásra, itt megtaláltad!</p>
+              <button class="btn btn-warning">Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb4">
+                <img src="./imgs/logo.png" alt="" class="img-fluid">
+              </div>
+              <h3 class="card-title">Building make</h3>
+              <div class="stars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi quidem impedit delectus, consectetur quae est perferendis harum commodi reprehenderit!</p>
+              <button class="btn btn-warning">Learn more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card text-center bg-white pb-2">
+            <div class="card-body text-dark">
+              <div class="img-area mb4">
+                <img src="./imgs/logo.png" alt="" class="img-fluid">
+              </div>
+              <h3 class="card-title">Building make</h3>
+              <div class="stars">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi quidem impedit delectus, consectetur quae est perferendis harum commodi reprehenderit!</p>
+              <button class="btn btn btn-warning">Learn more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 
   <!--Carousel kártyák tudja a tököm minekXD-->
@@ -281,9 +429,8 @@
 
 
 
-
   <!-- csapat section -->
-
+  <!--
   <section id="team" class="team section-padding">
     <div class="container">
       <div class="row">
@@ -345,6 +492,7 @@
       </div>
     </div>
   </section>
+  -->
 
   <!-- Elérhetőségek section -->
 
