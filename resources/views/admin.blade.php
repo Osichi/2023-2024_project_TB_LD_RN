@@ -60,7 +60,10 @@
 
 </table>
 <h1>Helyszínek</h1>
+<div class="container">
+  <div class="row">
 @foreach($posts as $post)
+<div class="col-2">
   <div class="card" style="width: 18rem;">
   <img src='{{$post->kep}}' class="card-img-top" >
   <div class="card-body">
@@ -76,8 +79,10 @@
     @endif
   </div>
 </div>
+</div>
   @endforeach
-
+  </div>
+  </div>
 <div class="text-center">
                         <small><a href="/">Vissza a főoldalra</a></small>
                     </div>

@@ -66,12 +66,6 @@
             <a class="nav-link" href="/register">Regisztráció</a>
           </li>
           @endif
-          <li class="nav-item active">
-            <a class="nav-link" href="#team" onclick="scrollToRolunk()">Rólunk</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#contact" onclick="scrollTocontact()">Elérhetőségek</a>
-          </li>
         </ul>
       </div>
     </div>
@@ -79,32 +73,23 @@
 
   <div class="container">
     <div class="card__container">
+      @foreach($posts as $p)
       <article class="card__article">
-        <img src="/imgs/center.jpg" alt="image" class="card__img">
+        <img src="{{$p->kep}}" class="card__img">
         <div class="card__data">
-          <span class="card__description">Vancourer hegyek, canada</span>
-          <h2 class="card__title">Center Cafe & Bar</h2>
+          <span class="card__description">{{$p->cim}}</span>
+          <h2 class="card__title">{{$p->nev}}</h2>
+          <h3 class="card__description">{{$p->kategoria}}</h3>
           <a href="#" class="card__button">Read more</a>
+          @if(Session::has('admin'))
+          <a href="{{url('/deleteLoc/'.$p->id) }}" onclick="return confirm('Biztos törölni akarod?')" class="card__button__delete">Törlés</a>
+          @endif
+          @if(Session::get('id') == $p->cegid)
+          <a href="{{url('/deleteLoc/'.$p->id) }}" onclick="return confirm('Biztos törölni akarod?')" class="card__button__delete">Törlés</a>
+          @endif
         </div>
       </article>
-
-      <article class="card__article">
-        <img src="/imgs/Rest.jpg" alt="image" class="card__img">
-        <div class="card__data">
-          <span class="card__description">leírás</span>
-          <h2 class="card__title">Vitrin</h2>
-          <a href="#" class="card__button">Read more</a>
-        </div>
-      </article>
-
-      <article class="card__article">
-        <img src="/imgs/fooldal2.webp" alt="image" class="card__img">
-        <div class="card__data">
-          <span class="card__description">Meg valami</span>
-          <h2 class="card__title">Meg valami másik hely</h2>
-          <a href="#" class="card__button">Read more</a>
-        </div>
-      </article>
+      @endforeach
     </div>
   </div>
 
