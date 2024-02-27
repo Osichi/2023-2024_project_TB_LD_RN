@@ -16,7 +16,7 @@ npm install
 composer install
 ```
 
-Mivel sok php extension kell hozzá, ezért inkább berakom az **_[enyém](https://anotepad.com/notes/4fiqbgx7)_**, ezt a php-(verziószám)/php.ini -fileba kell berakni
+Mivel sok php extension kell hozzá, ezért inkább berakom az **_[enyém](https://anotepad.com/notes/jt4peybd)_**, ezt a php-(verziószám)/php.ini -fileba kell berakni
 
 # Changelog
 
