@@ -29,6 +29,19 @@
       border: #002721;
     }
 
+    #portfolio {
+      background: #00816D;
+      position: relative;
+    }
+
+    #portfolio2 {
+      background: #002721;
+    }
+    #portfolio3 {
+      background: #00816D;
+    }
+
+
     .section-padding {
       padding: 100px 0;
     }

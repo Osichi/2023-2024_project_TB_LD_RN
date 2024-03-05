@@ -30,7 +30,7 @@
                 <div class="signup">
                     <form action="{{ route('register') }}" method="POST">
                         @csrf
-                        <label for="chk" aria-hidden="true">Sign up</label>
+                        <label for="chk" aria-hidden="true">Regisztráció</label>
                         <input type="text" placeholder="Cégjegyzékszám" id="cegszam" name="cegszam" required>
                         <input type="text" placeholder="Cégnév" id="cegnev" name="cegnev" required>
                         <input type="password" placeholder="Jelszó" id="jelszo" name="jelszo" required>
@@ -42,7 +42,7 @@
                 <div class="login">
                     <form action="{{ route('login') }}" method="POST">
                         @csrf
-                        <label for="chk" aria-hidden="true">Login</label>
+                        <label for="chk" aria-hidden="true">Belépés</label>
                         <input type="text" placeholder="Cégjegyzékszám" id="cegszam" name="cegszam" required>
                         <input type="password" name="jelszo" id="jelszo" placeholder="Jelszó" required>
                         <button>Belépés</button>

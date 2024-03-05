@@ -106,7 +106,7 @@ img {
 }
 
 .card__data {
-    width: 280px;
+    width: auto;
     background-color: var(--container-color);
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
@@ -136,7 +136,7 @@ img {
 .card__button {
     text-decoration: none;
     font-size: var(--small-font-size);
-    font-weight: 500;
+    font-weight: auto;
     color: var(--first-color);
 }
 .card__button:hover {

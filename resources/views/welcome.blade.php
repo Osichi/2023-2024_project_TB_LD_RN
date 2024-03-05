@@ -106,7 +106,7 @@
 
           @else
           <li class="nav-item active">
-            <a class="nav-link" href="/login">Bejelentkezés</a>
+            <a class="nav-link" href="/login">Belépés</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="/register">Regisztráció</a>
@@ -290,7 +290,7 @@
       </div>
     </div>
   </section>
-  <section id="portfolio" class="portfolio section-padding">
+  <section id="portfolio2" class="portfolio section-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -365,7 +365,7 @@
     </div>
   </section>
 
-  <section id="portfolio" class="portfolio section-padding">
+  <section id="portfolio3" class="portfolio section-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
