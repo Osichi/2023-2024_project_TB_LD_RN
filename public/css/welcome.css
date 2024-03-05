@@ -10,7 +10,6 @@
     body {
       background: #002721;
       color: white;
-
     }
 
 
@@ -171,7 +170,14 @@
     .lapok .card {
       margin: 0 .5em;
       width: calc(100%/3);
+    }
 
+    .form-control {
+      border: #002721;
+      caret-color: #00816D;
+    }
+    .form-control:focus {
+      box-shadow: none;
     }
 
     /* === Responsive css ===*/

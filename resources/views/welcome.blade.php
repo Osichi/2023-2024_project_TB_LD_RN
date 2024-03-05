@@ -548,7 +548,6 @@
                   <textarea rows="3" required class="form-control" placeholder="Ide írhatsz"></textarea>
                 </div>
               </div>
-
               <button class="btn btn-warning btn-lg btn-block mt-3">Küldés</button>
             </div>
           </form>
