@@ -71,6 +71,11 @@
     </div>
   </nav>
 
+  <form>
+        @csrf
+        <input type="search" id="search" name="search">
+    </form>
+
   <div class="container">
     <div class="card__container">
       @foreach($posts as $p)

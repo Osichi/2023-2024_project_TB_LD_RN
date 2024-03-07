@@ -66,6 +66,8 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az **_[enyém](https
 
 **2024.02.26**: cardok fixelve
 
+**2024.03.07**: keresés hozzáadva
+
 ## Ha kell helyszín teszteléshez (igen, van ami ismétlődik):
 
 ```

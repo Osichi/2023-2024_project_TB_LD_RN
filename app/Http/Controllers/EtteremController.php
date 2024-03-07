@@ -10,9 +10,14 @@ use Illuminate\Support\Facades\DB;
 
 class EtteremController extends Controller
 {
-    public function etteremPage(){
-        $posts = DB::table('posts')->get();
-        return view('ettermek', compact('posts'));
+    public function etteremPage(Request $request){
+        if(request('search')){
+            $posts = DB::select('SELECT * FROM posts WHERE nev LIKE "%' . request('search') . '%"');
+        }else{
+
+            $posts = DB::table('posts')->get();
+        }
+        return view('ettermek') -> with('posts', $posts);
     }
     public function feltoltesPage(){
         return view('hozzaadas');
