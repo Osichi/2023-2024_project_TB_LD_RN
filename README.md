@@ -20,24 +20,6 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az **_[enyém](https
 
 # Changelog
 
-**2023.10.11**: regisztrálás logika létrehozva
-
-**2023.10.13**: regisztrálás logika kibővítve
-
-**2023.10.15**: index.php átnevezve mainPage.php -ra, mainPage -n Belépés gomb hozzáadva, login.php létrehozva, login logika hozzáadva
-
-**2023.10.17**: login, register logika átdolgozva, működőképesek már
-
-**2023.10.18**: backend rész elválasztva a többitől
-
-**2023.10.20**: backend mappa létrehozva
-
-**2023.10.22**: frontend mappa létrehozva átláthatóság miatt, dokumentáció elkezdve, backendhez http válasz kódok hozzáadva, általános debugolás
-
-**2023.10.25**: dokumentáció korai frontend része elkezdve, pár frontendes dolog hozzáadva a kódokhoz, profil oldal létrehozva, .gitignore létrehozva
-
-**2023.11.05**: projektelőrehaladás hf feltöltve
-
 **2023.11.07**: laravel keretrendszeres projekt elkezdve
 
 **2023.11.08**: npm install
@@ -79,18 +61,5 @@ INSERT INTO posts VALUES(10, 2, 'Pivo Bar & Pizzeria', 0, 'Vitéz utca 26', 'Bá
 INSERT INTO posts VALUES(11, 3, 'Aradi Büfé (Budi Büfé)', 0, ' Aradi vértanúk tere', 'Kajálda', 'Na', 'https://lh3.googleusercontent.com/p/AF1QipMtMnI2SpXB_mYg3yFLt3WwHvBlHf6EaDuaviWa=s680-w680-h510', 'Na');
 INSERT INTO posts VALUES(12, 2, 'Jobb Mint Otthon Kisvendéglő', 0662555808, 'Lencsés u 4', 'Étterem', 'A Jobb Mint Otthon Kisvendéglő egy közkedvelt, színvonalas szegedi halászcsárda.', 'https://lh3.googleusercontent.com/p/AF1QipOuf1ClxC7mHT1qQGEjgsVaGChaun_szgeNWs0C=s680-w680-h510', 'https://www.jobbmintotthonkisvendeglo.hu');
 INSERT INTO posts VALUES(13, 3, 'Trója Ételbár', 06306279056, 'Kölcsey u. 4', 'Kajálda', 'Megéheztél? Gyere el hozzánk vagy rendelj a Trója hatalmas ételkínálatából!', 'https://lh3.googleusercontent.com/p/AF1QipMRREaRVdiAsPblrYmP5aKW7bqYJoyilbwbXmu2=s680-w680-h510', 'https://trojaszeged.hu/?gad_source=1&gclid=CjwKCAiAxaCvBhBaEiwAvsLmWDATYTHHgpVsjYyT3hHQqXiFZJ-a-3plN6Vba2nwW-qOrENlLozXChoC32oQAvD_BwE');
-INSERT INTO posts VALUES(14, 2, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
-INSERT INTO posts VALUES(15, 3, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
-INSERT INTO posts VALUES(16, 2, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
-INSERT INTO posts VALUES(17, 3, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
-INSERT INTO posts VALUES(18, 2, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
-INSERT INTO posts VALUES(19, 3, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
-INSERT INTO posts VALUES(20, 2, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
-INSERT INTO posts VALUES(21, 3, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
-INSERT INTO posts VALUES(22, 2, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
-INSERT INTO posts VALUES(23, 3, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
-INSERT INTO posts VALUES(24, 2, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
-INSERT INTO posts VALUES(25, 3, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
-INSERT INTO posts VALUES(26, 2, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
-INSERT INTO posts VALUES(27, 3, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
+
 ```
