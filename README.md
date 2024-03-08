@@ -52,7 +52,7 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az **_[enyém](https
 
 **2024.03.08**: dokumentáció változtatva, kiegészítve
 
-## Ha kell helyszín teszteléshez (igen, van ami ismétlődik):
+## Ha kell helyszín teszteléshez:
 
 ```
 INSERT INTO posts VALUES(8, 2, 'Nyugi Kert', 06308251595, 'Vitéz utca 28', 'Étterem', 'A szegedi egyetemisták körében méltán híres Nyugi Kert a TIK-kel szemben, garantáltan addiktív atmoszférával, változatos programokkal és egyedi gasztrosörökkel, hatalmas italkínálattal várja a kikapcsolódni vágyókat.', 'https://szegedietterem.hu/wp-content/uploads/2022/07/nyugi-kert0.jpg', 'https://www.facebook.com/szegedikocsma/');
