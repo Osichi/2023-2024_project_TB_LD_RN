@@ -71,9 +71,9 @@
     </div>
   </nav>
 
-  <form>
+  <form class="d-flex" role="search">
         @csrf
-        <input type="search" id="search" name="search">
+        <input class="form-control me-2" type="search" id="search" name="search">
     </form>
 
   <div class="container">

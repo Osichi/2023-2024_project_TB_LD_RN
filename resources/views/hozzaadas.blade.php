@@ -18,7 +18,7 @@
                         {{Session::get ('error')}}
                     </div>
                     @endif
-<form action="{{ route('feltolt') }}" method="POST">
+                        <form action="{{ route('feltolt') }}" method="POST">
                             @csrf
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control form-control-lg fs-6" placeholder="Név" id="nev" name="nev" required>
