@@ -1,230 +1,115 @@
-:root {
-    --first-color: hsl(82, 60%, 28%);
-    --title-color: hsl(0, 0%, 15%);
-    --text-color: hsl(0, 0%, 35%);
-    --body-color: hsl(0, 0%, 95%);
-    --container-color: hsl(0, 0%, 100%);
-
-    --body-font: "Poppins", sans-serif;
-    --h2-font-size: 1.25rem;
-    --small-font-size: 0.813rem;
-}
-
-@media screen and (min-width: 1120px) {
-    :root {
-        --h2-font-size: 1.5rem;
-        --small-font-size: 0.875rem;
-    }
-}
-
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
-}
-
-body {
-    font-family: var(--body-font);
-    background-color: var(--body-color);
-    color: var(--text-color);
-}
-
-.navbar-nav a {
-    position: relative;
-    font-size: 18px;
-    color: #00816d;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+  }
+  
+  body {
+    background-color: #002721;
+    color: white;
+  }
+  
+  .navbar-brand .text-success {
+    color: #00816D; /* Green color for the brand text */
+  }
+  
+  .navbar-nav a {
+    color: #fff; /* White color for navigation links */
     font-weight: 500;
-    text-decoration: none;
-    margin-left: 40px;
-}
-
-.navbar-nav a::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #002721;
-    transition: 0.3s;
-}
-
-.navbar-nav a:hover::before {
-    width: 100%;
-    color: #002721;
-}
-
-.navbar-light .navbar-brand {
-    color: #000;
-    font-size: 25px;
+    margin-left: 30px; /* Adjust margin between links */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-nav a:hover {
+    color: #00816D; /* Green color on hover */
+  }
+  
+  .navbar-light .navbar-brand {
+    font-size: 22px; /* Adjust brand text size */
     text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
+  }
 
-.navbar-light .navbar-brand:focus,
-.navbar-light .navbar-brand:hover {
-    color: #00816d;
-}
+  .form-control {
+    
+    border-radius: 4px;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .btn-outline-success {
+    background-color: #fff;
+    color: #00816D;
+    border-color: #00816D;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #00816D;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+  
 
-.navbar-light .navbar-nav .navbar-link {
-    color: #00816d;
-}
-
-.w-100 {
-    height: 100vh;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-.container {
-    left: auto;
-    top: auto;
-    padding-block: 3rem;
-}
-
-.card__container {
-    display: grid;
-    row-gap: 3.5rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 1.5rem;
+  .card__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust card spacing */
+    margin: 20px 0; /* Add some margin */
+  }
+  
+  .card__article {
+    width: calc(33% - 40px); /* Adjust card width based on columns */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card__article:hover {
+    transform: translateY(-2px); /* Add slight hover effect */
+  }
+  
+  .card__img {
     width: 100%;
-}
-
-.card__article {
-    position: relative;
-    overflow: hidden;
-}
-
-.card__img {
-    width: 328px;
-    border-radius: 1.5rem;
-}
-
-.card__data {
-    width: auto;
-    background-color: var(--container-color);
-    padding: 1.5rem 2rem;
-    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
-    border-radius: 1rem;
-    position: absolute;
-    bottom: -9rem;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-    opacity: 0;
-    transition: opacity 1s 1s;
-}
-
-.card__description {
-    display: block;
-    font-size: var(--small-font-size);
-    margin-bottom: 0.25rem;
-}
-
-.card__title {
-    font-size: var(--h2-font-size);
-    font-weight: 500;
-    color: var(--title-color);
-    margin-bottom: 0.75rem;
-}
-
-.card__button {
-    text-decoration: none;
-    font-size: var(--small-font-size);
-    font-weight: auto;
-    color: var(--first-color);
-}
-.card__button:hover {
-    text-decoration: underline;
-}
-
-.card__button__delete {
-    text-decoration: none;
-    font-size: var(--small-font-size);
-    font-weight: 500;
-    color: red;
-}
-
-.card__button__delete:hover {
-    text-decoration: underline;
-}
-
-/* Animációk hover-je*/
-
-.card__article:hover .card__data {
-    animation: show-data 1s forwards;
-    opacity: 1;
-    transition: opacity 0.3s;
-}
-
-.card__article:hover {
-    animation: remove-overflow 2s forwards;
-}
-
-.card__article:not(:hover) {
-    animation: show-overflow 2s forwards;
-}
-
-.card__article:not(:hover) .card__data {
-    animation: remove-data 1s forwards;
-}
-
-/* kártyák animációja*/
-
-@keyframes show-data {
-    50% {
-        transform: translateY(-10rem);
-    }
-    100% {
-        transform: translateY(-7rem);
-    }
-}
-
-@keyframes remove-overflow {
-    to {
-        overflow: initial;
-    }
-}
-
-@keyframes remove-data {
-    0% {
-        transform: translateY(-7rem);
-    }
-    50% {
-        transform: translateY(-10rem);
-    }
-    100% {
-        transform: translateY(-0.5rem);
-    }
-}
-
-@keyframes show-overflow {
-    0% {
-        overflow: initial;
-        pointer-events: none;
-    }
-    50% {
-        overflow: hidden;
-    }
-}
-
-@media screen and (max-width: 340px) {
-    .container {
-        margin-inline: 1rem;
-    }
-
-    .card__data {
-        width: 250px;
-        padding: 1rem;
-    }
-}
-@media screen and (max-width: 340px) {
-    .card__container {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.5rem;
-    }
-}
+    height: 200px;
+    object-fit: cover; /* Crop image to fit */
+    border-radius: 4px 4px 0 0; /* Rounded top corners */
+  }
+  
+  .card__data {
+    padding: 20px;
+  }
+  
+  .card__title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card__button {
+    background-color: #00816D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card__button:hover {
+    background-color: #002721; /* Darker green on hover */
+  }
+  
+  .card__button__delete {
+    background-color: #c0392b; /* Red color for delete button */
+    margin-top: 10px;
+  }
+  
