@@ -52,6 +52,8 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az **_[enyém](https
 
 **2024.03.08**: dokumentáció változtatva, kiegészítve
 
+**2024.03.31**: modal létrehozva
+
 ## Ha kell helyszín teszteléshez:
 
 ```

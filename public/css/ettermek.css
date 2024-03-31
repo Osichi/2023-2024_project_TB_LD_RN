@@ -3,113 +3,122 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, sans-serif;
-  }
-  
-  body {
+}
+
+body {
     background-color: #002721;
     color: white;
-  }
-  
-  .navbar-brand .text-success {
-    color: #00816D; /* Green color for the brand text */
-  }
-  
-  .navbar-nav a {
+}
+
+.navbar-brand .text-success {
+    color: #00816d; /* Green color for the brand text */
+}
+
+.navbar-nav a {
     color: #fff; /* White color for navigation links */
     font-weight: 500;
     margin-left: 30px; /* Adjust margin between links */
     transition: all 0.3s ease-in-out;
-  }
-  
-  .navbar-nav a:hover {
-    color: #00816D; /* Green color on hover */
-  }
-  
-  .navbar-light .navbar-brand {
+}
+
+.navbar-nav a:hover {
+    color: #00816d; /* Green color on hover */
+}
+
+.navbar-light .navbar-brand {
     font-size: 22px; /* Adjust brand text size */
     text-transform: uppercase;
-  }
+}
 
-  .form-control {
-    
+.form-control {
     border-radius: 4px;
     align-items: center;
     padding: 10px 15px;
     font-size: 16px;
     color: #333;
     text-decoration: none;
-  }
-  
-  .btn-outline-success {
+}
+
+.btn-outline-success {
     background-color: #fff;
-    color: #00816D;
-    border-color: #00816D;
+    color: #00816d;
+    border-color: #00816d;
     border-radius: 4px;
     padding: 10px 15px;
     font-size: 16px;
     transition: all 0.3s ease-in-out;
-  }
-  
-  .btn-outline-success:hover {
-    background-color: #00816D;
+}
+
+.btn-outline-success:hover {
+    background-color: #00816d;
     color: #fff;
     box-shadow: none;
     outline: none;
     border: none;
-  }
-  
+}
 
-  .card__container {
+.card__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Adjust card spacing */
     margin: 20px 0; /* Add some margin */
-  }
-  
-  .card__article {
+}
+
+.card__article {
     width: calc(33% - 40px); /* Adjust card width based on columns */
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
-  }
-  
-  .card__article:hover {
+}
+
+.card__article:hover {
     transform: translateY(-2px); /* Add slight hover effect */
-  }
-  
-  .card__img {
+}
+
+.card__img {
     width: 100%;
     height: 200px;
     object-fit: cover; /* Crop image to fit */
     border-radius: 4px 4px 0 0; /* Rounded top corners */
-  }
-  
-  .card__data {
+}
+
+.card__data {
     padding: 20px;
-  }
-  
-  .card__title {
+}
+
+.card__title {
     font-size: 18px;
     margin-bottom: 10px;
-  }
-  
-  .card__button {
-    background-color: #00816D;
+}
+
+.card__button {
+    background-color: #00816d;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-  }
-  
-  .card__button:hover {
+}
+
+.card__button:hover {
     background-color: #002721; /* Darker green on hover */
-  }
-  
-  .card__button__delete {
+}
+
+.card__button__delete {
     background-color: #c0392b; /* Red color for delete button */
     margin-top: 10px;
-  }
-  
+}
+
+.modal-body {
+    color: #000;
+}
+
+.modal-etterem-kep {
+    width: 100%;
+}
+
+.modal-prof-kep {
+    width: 30px;
+}

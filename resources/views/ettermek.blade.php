@@ -82,10 +82,10 @@
       <article class="card__article">
         <img src="{{$p->kep}}" class="card__img">
         <div class="card__data">
-          <span class="card__description">{{$p->cim}}</span>
-          <h2 class="card__title">{{$p->nev}}</h2>
-          <h3 class="card__description">{{$p->kategoria}}</h3>
-          <a href="#" class="card__button">Read more</a>
+          <span class="card__description">{{$p->kategoria}}</span>
+          <h2 class="card__title">{{$p->cim}}</h2>
+          <h3 class="card__description">{{$p->nev}}</h3><br>
+          <a href="#" class="card__button" data-bs-toggle="modal" data-bs-target="#modal{{$p->id}}">Read more</a>
           @if(Session::has('admin'))
           <a href="{{url('/deleteLoc/'.$p->id) }}" onclick="return confirm('Biztos törölni akarod?')" class="card__button__delete">Törlés</a>
           @endif
@@ -94,6 +94,28 @@
           @endif
         </div>
       </article>
+      <!-- Modal -->
+<div class="modal fade" id="modal{{$p->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="{{$p->kep}}" class="modal-etterem-kep" alt="">
+        <h1>{{$p->nev}}</h1>
+        <h2>{{$p->cim}}</h2>
+        <h3>{{$p->cegnev}} <img src="{{$p->profilkep}}" class="modal-prof-kep"></h3>
+        <h3>{{$p->kategoria}}</h3>
+        <p>{{$p->leiras}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+      </div>
+    </div>
+  </div>
+</div>
       @endforeach
     </div>
   </div>

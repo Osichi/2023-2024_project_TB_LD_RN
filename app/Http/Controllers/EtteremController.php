@@ -14,9 +14,10 @@ class EtteremController extends Controller
         if(request('search')){
             $posts = DB::select('SELECT * FROM posts WHERE nev LIKE "%' . request('search') . '%"');
         }else{
-
-            $posts = DB::table('posts')->get();
+            $posts=DB::select('SELECT * FROM users INNER JOIN posts ON users.id=posts.cegid;');
+            //$posts = DB::table('posts')->get();
         }
+        //$valami = DB::select('SELECT * FROM users INNER JOIN posts ON users.id=posts.cegid;');
         return view('ettermek') -> with('posts', $posts);
     }
     public function feltoltesPage(){
