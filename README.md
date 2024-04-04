@@ -54,6 +54,8 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az **_[enyém](https
 
 **2024.03.31**: modal létrehozva
 
+**2024.04.04**: carousel link fixelve
+
 ## Ha kell helyszín teszteléshez:
 
 ```

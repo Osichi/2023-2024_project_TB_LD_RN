@@ -147,7 +147,7 @@
         <div class="carousel-caption">
           <h5 class="animate__animated animate__zoomIn animate__delay-0.5s">Éttermek</h5>
           <p class="animate__animated animate__flipInX animate__delay-0.5s">Találd meg kedvenc éttermedet Szegeden és környékén! </p>
-          <p class="animate__animated animate__flipInX animate__delay-0.5s"><a href="/resources/views/etterem.blade.php" class="btn btn-warning mt-3">Irány az éttermekhez!</a></p>
+          <p class="animate__animated animate__flipInX animate__delay-0.5s"><a href="/ettermek" class="btn btn-warning mt-3">Irány az éttermekhez!</a></p>
         </div>
       </div>
       <div class="carousel-item">
@@ -155,7 +155,7 @@
         <div class="carousel-caption">
           <h5 class="animate__animated animate__zoomIn animate__delay-0.5s">Bárok</h5>
           <p class="animate__animated animate__zoomIn animate__delay-0.5s">Találd meg számodra a legjobb választást egy hétvégi iszogatásra, baráti összejövetelre vagy egy kis erezd el a hajadra.</p>
-          <p class="animate__animated animate__zoomIn animate__delay-0.5s"><a href="#" class="btn btn-warning mt-3">Irány a bárokhoz!</a></p>
+          <p class="animate__animated animate__zoomIn animate__delay-0.5s"><a href="/ettermek" class="btn btn-warning mt-3">Irány a bárokhoz!</a></p>
         </div>
       </div>
       <div class="carousel-item">
@@ -167,7 +167,7 @@
             laudantium nostrum nobis tempora eveniet voluptatum eos assumenda mollitia veritatis,
             numquam sed esse? Animi, quam sit eligendi fugiat quaerat doloribus tenetur dolor
             vero quibusdam soetur ipsum accusantium eius quos! Inventore, fugiat tempora</p>
-          <p class="animate__animated animate__zoomIn animate__delay-0.5s"><a href="#" class="btn btn-warning mt-3">Irány a büfékhez!</a></p>
+          <p class="animate__animated animate__zoomIn animate__delay-0.5s"><a href="/ettermek" class="btn btn-warning mt-3">Irány a büfékhez!</a></p>
         </div>
       </div>
     </div>
