@@ -85,6 +85,9 @@
         </div>
     </div>
 
+    <div>
+        <h1 style="color:red;">Veszél zóna!</h1>
+    </div>
 
     <div class="text-center">
         <small><a href="/">Vissza a főoldalra</a></small>

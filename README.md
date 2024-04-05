@@ -56,6 +56,8 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az **_[enyém](https
 
 **2024.04.04**: carousel link fixelve
 
+**2024.04.05**: telefonszám hozzáadva a helyszínekhez, dokumentáció frissítve
+
 ## Ha kell helyszín teszteléshez:
 
 ```

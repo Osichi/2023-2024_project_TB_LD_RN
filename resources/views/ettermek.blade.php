@@ -85,7 +85,7 @@
           <span class="card__description">{{$p->kategoria}}</span>
           <h2 class="card__title">{{$p->cim}}</h2>
           <h3 class="card__description">{{$p->nev}}</h3><br>
-          <a href="#" class="card__button" data-bs-toggle="modal" data-bs-target="#modal{{$p->id}}">Read more</a>
+          <a href="#" class="card__button" data-bs-toggle="modal" data-bs-target="#modal{{$p->id}}">Részletek</a>
           @if(Session::has('admin'))
           <a href="{{url('/deleteLoc/'.$p->id) }}" onclick="return confirm('Biztos törölni akarod?')" class="card__button__delete">Törlés</a>
           @endif
@@ -109,6 +109,7 @@
         <h3>{{$p->cegnev}} <img src="{{$p->profilkep}}" class="modal-prof-kep"></h3>
         <h3>{{$p->kategoria}}</h3>
         <p>{{$p->leiras}}</p>
+        <p>{{$p->telefonszam}}</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>

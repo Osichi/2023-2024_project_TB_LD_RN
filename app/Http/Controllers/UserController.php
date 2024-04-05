@@ -13,10 +13,12 @@ use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
     public function userPage(){
-        if(Session::has('nev') or Session::has('admin')){
+        if(Session::has('nev')){
             $user = Auth::user();
             return view('/profile', compact("user"));
-        }
+        }else if(Session::has('admin')){
+            return redirect('/');
+        }else
         return view('/login');
     }
 

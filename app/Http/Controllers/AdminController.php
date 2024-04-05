@@ -12,20 +12,25 @@ class AdminController extends Controller
 {
 
     public function adminPage(){
-        if(Session::has('nev')){
-           return redirect('/')->with('alert', 'Nincs hozzáférésed ehhez!');
-        }else{
-                $users = User::all();
+        if(Session::has('admin')){
+            $users = User::all();
                 $posts = DB::table('posts')->get();
                  return view('/admin', compact('users'), compact('posts') );
-    
+          
+        }else{
+                
+            return redirect('/')->with('alert', 'Nincs hozzáférésed ehhez!');
         }
     }
     
     public function deleteUser($id){
-        $users = User::findOrFail($id);
-        $users->delete();
-        return redirect('/admin')->with('success', 'Felhasználó törölve!');
+        if(Session::has('admin')){
+            $users = User::findOrFail($id);
+            $users->delete();
+            return redirect('/admin')->with('success', 'Felhasználó törölve!');
+        }else{
+            return redirect("/");
+        }
     }
 
    

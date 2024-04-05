@@ -21,7 +21,12 @@ class EtteremController extends Controller
         return view('ettermek') -> with('posts', $posts);
     }
     public function feltoltesPage(){
-        return view('hozzaadas');
+        if(Session::has('nev')){
+            return view('hozzaadas');
+
+        }else{
+            return redirect('ettermek');
+        }
     }
     public function feltoltes(Request $request){
         $id = Session::get('id');
@@ -53,8 +58,8 @@ class EtteremController extends Controller
     }
 
     public function deleteLocation($id){
-        $posts = Post::findOrFail($id);
-        $posts->delete();
-        return back()->with('success', 'Helyszín törölve!');
-    }
+            $posts = Post::findOrFail($id);
+            $posts->delete();
+            return back()->with('success', 'Helyszín törölve!');
+        }
 }
