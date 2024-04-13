@@ -58,6 +58,9 @@ Mivel sok php extension kell hozzá, ezért inkább berakom az **_[enyém](https
 
 **2024.04.05**: telefonszám hozzáadva a helyszínekhez, dokumentáció frissítve
 
+**2024.04.11**: dokumentáció frissítve
+
+**2024.04.13**: dokumentáció frissítve, modal kicsit módosítva
 ## Ha kell helyszín teszteléshez:
 
 ```

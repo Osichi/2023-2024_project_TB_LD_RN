@@ -109,10 +109,8 @@
         <h3>{{$p->cegnev}} <img src="{{$p->profilkep}}" class="modal-prof-kep"></h3>
         <h3>{{$p->kategoria}}</h3>
         <p>{{$p->leiras}}</p>
-        <p>{{$p->telefonszam}}</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+        <p>Telefonszám: {{$p->telefonszam}}</p>
+        <a href="{{$p->weboldal}}">Weboldal</a>
       </div>
     </div>
   </div>

@@ -108,9 +108,6 @@
           <li class="nav-item active">
             <a class="nav-link" href="/login">Belépés</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="/register">Regisztráció</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="/ettermek">Éttermek</a>
           </li>
