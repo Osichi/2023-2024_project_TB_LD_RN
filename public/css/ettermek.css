@@ -7,7 +7,7 @@
 
 body {
     background-color: #002721;
-    color: white;
+    color: #00816d;
 }
 
 .navbar-brand .text-success {
@@ -15,14 +15,14 @@ body {
 }
 
 .navbar-nav a {
-    color: #fff; /* White color for navigation links */
+    color: #00816d; /* White color for navigation links */
     font-weight: 500;
     margin-left: 30px; /* Adjust margin between links */
     transition: all 0.3s ease-in-out;
 }
 
 .navbar-nav a:hover {
-    color: #00816d; /* Green color on hover */
+    color: #002721; /* Green color on hover */
 }
 
 .navbar-light .navbar-brand {
