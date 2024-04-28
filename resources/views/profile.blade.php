@@ -23,25 +23,28 @@
     </div>
     @endif
     <h1>{{Session::get('nev')}} profilja</h1>
-
-    <h2>Profilkép módosítása</h2>
-    <img class="img-fluid" src="{{Session::get('profilkep')}}" alt="kep" width=100px>
-    <form action="{{route('updatePic')}}" method="post">
-        @csrf
-        <div class="">
-            <label for="kep" class="form-label">Profilképnek csak linket lehet megadni!</label>
-            <input class="form-control" type="text" id="kep" name="kep" value="{{Session::get('profilkep')}}" required>
-        </div>
-        <div class="">
-            <div class="d-grid">
-                <button type="submit" class="btn btn-primary">Kép feltöltése </button>
-            </div>
-        </div>
-    </form>
-
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12" id="">
+                <h2>Profilkép módosítása</h2>
+                <img class="img-fluid" src="{{Session::get('profilkep')}}" alt="kep" width=100px>
+                <form action="{{route('updatePic')}}" method="post" class="">
+                    @csrf
+                    <div class="">
+                        <label for="kep" class="form-label">Profilképnek csak linket lehet megadni!</label>
+                        <input class="form-control" type="text" id="kep" name="kep" value="{{Session::get('profilkep')}}" required>
+                    </div>
+                    <div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Kép feltöltése </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+
+    
+            <div class="col-12">
                 <h2>Adatok módosítása</h2>
                 <form action="{{route ('update') }}" method="post">
                     @csrf
@@ -61,7 +64,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-6">
+            <div class="col-12">
                 <h2>Jelszó módosítása</h2>
                 <form action="{{route('updatePWD')}}" method="post">
                     <div class="mb-3">

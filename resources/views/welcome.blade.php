@@ -73,10 +73,7 @@
             <a class="nav-link" href="/profile">Profilom</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/ettermek">Éttermek</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#team" onclick="scrollToRolunk()">Rólunk</a>
+            <a class="nav-link" href="/ettermek">Helyeink</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#contact" onclick="scrollTocontact()">Elérhetőségek</a>
@@ -92,7 +89,7 @@
             <a class="nav-link" href="/admin">Admin panel</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/ettermek">Éttermek</a>
+            <a class="nav-link" href="/ettermek">Helyeink</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#team" onclick="scrollToRolunk()">Rólunk</a>
@@ -109,10 +106,7 @@
             <a class="nav-link" href="/login">Belépés</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/ettermek">Éttermek</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#team" onclick="scrollToRolunk()">Rólunk</a>
+            <a class="nav-link" href="/ettermek">Helyeink</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#contact" onclick="scrollTocontact()">Elérhetőségek</a>
@@ -158,12 +152,8 @@
       <div class="carousel-item">
         <img class="d-block w-100" src="./imgs/fooldal2.webp" alt="...">
         <div class="carousel-caption">
-          <h5 class="animate__animated animate__zoomIn animate__delay-0.5s">Büfék</h5>
-          <p class="animate__animated animate__zoomIn animate__delay-0.5s">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores dolor
-            repellat quasi expedita doloribus veniam repudiandae aut itaque, consequuntur
-            laudantium nostrum nobis tempora eveniet voluptatum eos assumenda mollitia veritatis,
-            numquam sed esse? Animi, quam sit eligendi fugiat quaerat doloribus tenetur dolor
-            vero quibusdam soetur ipsum accusantium eius quos! Inventore, fugiat tempora</p>
+          <h5 class="animate__animated animate__zoomIn animate__delay-0.5s">Kajáldák</h5>
+          <p class="animate__animated animate__zoomIn animate__delay-0.5s">Ha csak be dobál egy gyors kaját, válogass a legjobb helyeink közül!</p>
           <p class="animate__animated animate__zoomIn animate__delay-0.5s"><a href="/ettermek" class="btn btn-warning mt-3">Irány a büfékhez!</a></p>
         </div>
       </div>
@@ -230,13 +220,7 @@
               <h3 class="card-title">Vitrin Szeged</h3>
               <div class="ertekeles">
 
-                <div class="stars">
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                </div>
+                
                 <p id="ertekelo-eredmeny"></p>
               </div>
               <p class="lead">Hogyha egy előkelőbb helyet keresel a hétvégi italozásra, itt megtaláltad!</p>
@@ -252,13 +236,7 @@
                 <img src="./imgs/logo.png" alt="" class="img-fluid">
               </div>
               <h3 class="card-title">Building make</h3>
-              <div class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
+              
               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi quidem impedit delectus, consectetur quae est perferendis harum commodi reprehenderit!</p>
               <button class="btn btn-warning">Learn more</button>
             </div>
@@ -272,13 +250,7 @@
                 <img src="./imgs/logo.png" alt="" class="img-fluid">
               </div>
               <h3 class="card-title">Building make</h3>
-              <div class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
+              
               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi quidem impedit delectus, consectetur quae est perferendis harum commodi reprehenderit!</p>
               <button class="btn btn btn-warning">Learn more</button>
             </div>
@@ -306,13 +278,7 @@
                 <img src="./imgs/fooldal.jpg" alt="" class="img img-fluid">
               </div>
               <h3 class="card-title">Vitrin Szeged</h3>
-              <div class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
+              
               <p class="lead">Hogyha egy előkelőbb helyet keresel a hétvégi italozásra, itt megtaláltad!</p>
               <button class="btn btn-warning">Learn more</button>
             </div>
@@ -326,13 +292,7 @@
                 <img src="./imgs/logo.png" alt="" class="img-fluid">
               </div>
               <h3 class="card-title">Building make</h3>
-              <div class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
+              
               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi quidem impedit delectus, consectetur quae est perferendis harum commodi reprehenderit!</p>
               <button class="btn btn-warning">Learn more</button>
             </div>
@@ -346,13 +306,7 @@
                 <img src="./imgs/logo.png" alt="" class="img-fluid">
               </div>
               <h3 class="card-title">Building make</h3>
-              <div class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
+              
               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi quidem impedit delectus, consectetur quae est perferendis harum commodi reprehenderit!</p>
               <button class="btn btn btn-warning">Learn more</button>
             </div>
@@ -381,13 +335,7 @@
                 <img src="./imgs/fooldal.jpg" alt="" class="img img-fluid">
               </div>
               <h3 class="card-title">Vitrin Szeged</h3>
-              <div class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
+              
               <p class="lead">Hogyha egy előkelőbb helyet keresel a hétvégi italozásra, itt megtaláltad!</p>
               <button class="btn btn-warning">Learn more</button>
             </div>
@@ -401,13 +349,7 @@
                 <img src="./imgs/logo.png" alt="" class="img-fluid">
               </div>
               <h3 class="card-title">Building make</h3>
-              <div class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
+              
               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi quidem impedit delectus, consectetur quae est perferendis harum commodi reprehenderit!</p>
               <button class="btn btn-warning">Learn more</button>
             </div>
@@ -421,13 +363,7 @@
                 <img src="./imgs/logo.png" alt="" class="img-fluid">
               </div>
               <h3 class="card-title">Building make</h3>
-              <div class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
+              
               <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quasi quidem impedit delectus, consectetur quae est perferendis harum commodi reprehenderit!</p>
               <button class="btn btn btn-warning">Learn more</button>
             </div>

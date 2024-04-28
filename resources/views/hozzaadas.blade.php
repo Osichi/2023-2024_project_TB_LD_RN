@@ -47,6 +47,9 @@
                                 <input type="text" class="form-control form-control-lg fs-6" placeholder="Weboldal címe" id="weboldal" name="weboldal" required>
                             </div>
                             <button class="btn btn-lg w-100 mb-3">Feltöltés</button>
+                            <div class="text-center">
+                                <small><a href="/">Vissza a főoldalra</a></small>
+                            </div>
                         </form>
 </body>
 </html>
