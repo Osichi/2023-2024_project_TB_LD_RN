@@ -20,7 +20,8 @@ use App\Models\User;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $posts=DB::select('SELECT * FROM posts ORDER BY id DESC LIMIT 3');
+    return view('welcome') -> with('posts', $posts);
 });
 
 //regisztáció

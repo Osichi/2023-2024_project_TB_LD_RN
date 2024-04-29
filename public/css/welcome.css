@@ -193,6 +193,43 @@
       box-shadow: none;
     }
 
+    .card__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* Adjust card spacing */
+      margin: 20px 0; /* Add some margin */
+  }
+  
+  .card__article {
+      width: calc(33% - 40px); /* Adjust card width based on columns */
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+      border-radius: 4px;
+      background-color: #fff;
+      color: #00816D;
+      transition: all 0.3s ease-in-out;
+  }
+  
+  .card__article:hover {
+      transform: translateY(-2px); /* Add slight hover effect */
+  }
+  
+  .card__img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; /* Crop image to fit */
+      border-radius: 4px 4px 0 0; /* Rounded top corners */
+  }
+  
+  .card__data {
+      padding: 20px;
+  }
+  
+  .card__title {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+
     /* === Responsive css ===*/
 
     @media only screen and (min-width: 767px) and (max-width:991px) {

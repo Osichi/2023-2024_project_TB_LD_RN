@@ -14,6 +14,7 @@
     <title>Admin felület</title>
 </head>
 <body>
+  
 @if (Session::has ('success'))
                     <div class="alert alert-success" role="alert">
                         {{Session::get ('success')}}

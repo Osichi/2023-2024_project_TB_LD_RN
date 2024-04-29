@@ -36,7 +36,7 @@
             <a class="nav-link" href="/" onclick="scrollToWelcome()">Főoldal</a>
           </li>
           @if (Session::has('nev'))
-          <li class="nav-item" style="color: red;">
+          <li class="nav-item">
             Üdv {{Session::get('nev')}}
           </li>
           <li class="nav-item">
@@ -73,7 +73,7 @@
 
   <form class="d-flex" role="search">
         @csrf
-        <input class="form-control me-2" type="search" id="search" name="search">
+        <input class="form-control me-2" type="search" id="search" name="search" placeholder="Keresés">
     </form>
 
   <div class="container">
@@ -99,7 +99,6 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">

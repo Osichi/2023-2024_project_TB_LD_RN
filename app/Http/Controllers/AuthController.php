@@ -81,14 +81,12 @@ class AuthController extends Controller
 
     public function getUserById($userId)
     {
-        // Retrieve user by ID
         $user = User::find($userId);
     
         if ($user) {
             Session::put('id', $user);
             return $user;
         } else {
-            // User not found
             return null;
         }
     }
