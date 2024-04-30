@@ -12,7 +12,7 @@ class EtteremController extends Controller
 {
     public function etteremPage(Request $request){
         if(request('search')){
-            $posts = DB::select('SELECT * FROM posts WHERE nev LIKE "%' . request('search') . '%"');
+            $posts = DB::select('SELECT * FROM posts INNER JOIN users ON users.id=posts.cegid WHERE nev LIKE "%' . request('search') . '%"');
         }else{
             $posts=DB::select('SELECT * FROM users INNER JOIN posts ON users.id=posts.cegid;');
             //$posts = DB::table('posts')->get();
