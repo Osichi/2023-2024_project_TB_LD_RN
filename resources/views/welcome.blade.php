@@ -187,7 +187,6 @@
               szimplán kajálnának egy jót. A weboldal az egyszerűbb keresésen alapszik, hogy az ember az adott városban a legjobban értékelt helyeket könnyedén megtalálja. Célunk hogy az éttermek
               úgy lássák, hogy van értelme regisztrálni a cégüket, mert a könnyeb keresésnek hála az eldugodtabb helyek is könnyedén megtalálhatók!
             </p>
-            <a href="#" class="btn btn-warning">Tudj meg többet!</a>
           </div>
         </div>
       </div>
@@ -327,7 +326,7 @@
                   <textarea rows="3" required class="form-control" placeholder="Ide írhatsz"></textarea>
                 </div>
               </div>
-              <button class="btn btn-warning btn-lg btn-block mt-3">Küldés</button>
+              <button class="btn btn-warning btn-lg btn-block mt-3" onClick="window.location.href=window.location.href">Küldés</button>
             </div>
           </form>
         </div>

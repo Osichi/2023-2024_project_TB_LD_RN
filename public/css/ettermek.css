@@ -67,6 +67,7 @@ body {
 .card__article {
     width: calc(33% - 40px); /* Adjust card width based on columns */
     margin-bottom: 20px;
+    border: 1px solid #00816d;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
